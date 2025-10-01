@@ -1,12 +1,13 @@
 // import { useState } from 'react'
 import './App.css';
 import Layout from './components/layout/Layout';
-
+import Home from './pages/home/Home';
 function App() {
   return (
     <>
       <Layout>
-        <h1 className='text-black'>Hello World</h1>
+        
+          <Home />
       </Layout>
     </>
   );
