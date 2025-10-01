@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Layout>
-        {/* <h1 className='text-black'>Hello World</h1> */}
+        <h1 className='text-black'>Hello World</h1>
       </Layout>
     </>
   );
