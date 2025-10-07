@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import VietnamFlag from '../../assets/Img/vietnam.png'; // Adjust path as needed
 import Logo from '../../assets/Img/logo.png'; // Adjust path as needed
 
@@ -11,10 +12,46 @@ export default function Header() {
             <img src={Logo} className="logopalmtek" alt="Logo" />
           </div>
           <nav className="nav">
-            <a href="#home">Trang chủ</a>
-            <a href="#about">Về chúng tôi</a>
-            <a href="#solutions">Giải pháp</a>
-            <a href="#contact">Liên hệ</a>
+            <NavLink
+              to="/"
+              style={({ isActive }) =>
+                isActive
+                  ? { color: '#d32f2f', fontWeight: 'bold' }
+                  : { color: 'black' }
+              }
+            >
+              Trang chủ
+            </NavLink>
+            <NavLink
+              to="/about"
+              style={({ isActive }) =>
+                isActive
+                  ? { color: '#d32f2f', fontWeight: 'bold' }
+                  : { color: 'black' }
+              }
+            >
+              Về chúng tôi
+            </NavLink>
+            <NavLink
+              to="/solutions"
+              style={({ isActive }) =>
+                isActive
+                  ? { color: '#d32f2f', fontWeight: 'bold' }
+                  : { color: 'black' }
+              }
+            >
+              Giải pháp
+            </NavLink>
+            <NavLink
+              to="/contact"
+              style={({ isActive }) =>
+                isActive
+                  ? { color: '#d32f2f', fontWeight: 'bold' }
+                  : { color: 'black' }
+              }
+            >
+              Liên hệ
+            </NavLink>
           </nav>
           <div className="flag">
             <img src={VietnamFlag} alt="" />
