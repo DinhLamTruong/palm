@@ -5,6 +5,12 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import { useTranslation } from 'react-i18next';
 
+import Lake from "../assets/Img/V-Lake.jpg";
+import Transform from "../assets/Img/V-Transform.jpg";
+import Lang from "../assets/Img/V-Lang.jpg";
+import Lab from "../assets/Img/V-lab.jpg";
+import Azur from "../assets/Img/V-Azur.jpg";
+
 const ThreeDSlider = () => {
   const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
@@ -12,31 +18,32 @@ const ThreeDSlider = () => {
 
   const images = [
     {
-      src: "src/assets/Img/V-Lake.jpg",
+      src: Lake, // <-- use the imported variable directly
       title: t('home.solutions.vLake.title'),
       text: t('home.solutions.vLake.text'),
     },
     {
-      src: "src/assets/Img/V-Transform.jpg",
+      src: Transform,
       title: t('home.solutions.vTransform.title'),
       text: t('home.solutions.vTransform.text'),
     },
     {
-      src: "src/assets/Img/V-Lang.jpg",
+      src: Lang,
       title: t('home.solutions.vLang.title'),
       text: t('home.solutions.vLang.text'),
     },
     {
-      src: "src/assets/Img/V-lab.jpg",
+      src: Lab,
       title: t('home.solutions.vLab.title'),
       text: t('home.solutions.vLab.text'),
     },
     {
-      src: "src/assets/Img/V-Azur.jpg",
+      src: Azur,
       title: t('home.solutions.vAzur.title'),
       text: t('home.solutions.vAzur.text'),
     },
   ];
+
 
   const handleClick = (index) => {
     if (swiperRef.current) {

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useTranslation } from 'react-i18next';
+import banner from '../../assets/Img/bannerpage.png';
 
 const Contact = () => {
   const [submitMessage, setSubmitMessage] = useState('');
@@ -44,7 +45,7 @@ const Contact = () => {
       {/* Header Banner */}
       <header
         className="relative bg-cover bg-center h-120 flex items-center justify-center"
-        style={{ backgroundImage: "url('/src/assets/Img/bannerpage.png')" }}
+        style={{ backgroundImage: `url(${banner})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
         <h1 className="relative text-white text-6xl font-medium">{t('contact.title')}</h1>

@@ -1,14 +1,28 @@
 import React, { useState, useRef } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
+import banner from '../../assets/Img/bannerpage.png'; // Adjust path as needed
+import img1 from '../../assets/partnersClients/1.png';
+import img2 from '../../assets/partnersClients/2.png';
+import img3 from '../../assets/partnersClients/3.png';
+import img4 from '../../assets/partnersClients/4.png';
+import img5 from '../../assets/partnersClients/5.png';
+import img6 from '../../assets/partnersClients/6.png';
+
+import img1Slu from '../../assets/imgsSolution/1.png';
+import img2Slu from '../../assets/imgsSolution/2.png';
+import img3Slu from '../../assets/imgsSolution/3.png';
+import img4Slu from '../../assets/imgsSolution/4.png';
+import img5Slu from '../../assets/imgsSolution/5.png';
+
 
 const partnersLogos = [
-  { src: '/src/pages/solution/partnersCLients/1.png', alt: 'Mobifone' },
-  { src: '/src/pages/solution/partnersCLients/2.png', alt: 'Gtel' },
-  { src: '/src/pages/solution/partnersCLients/3.png', alt: 'O Cau' },
-  { src: '/src/pages/solution/partnersCLients/4.png', alt: 'UNTIT' },
-  { src: '/src/pages/solution/partnersCLients/5.png', alt: 'N' },
-  { src: '/src/pages/solution/partnersCLients/6.png', alt: 'Network Optix' },
+  { src: img1, alt: 'Mobifone' },
+  { src: img2, alt: 'Gtel' },
+  { src: img3, alt: 'O Cau' },
+  { src: img4, alt: 'UNITT' },
+  { src: img5, alt: 'N' },
+  { src: img6, alt: 'Network Optix' },
 ];
 
 const TechnologySolutions = () => {
@@ -17,32 +31,32 @@ const TechnologySolutions = () => {
   const scrollRef = useRef(null);
 
   const technologySolutionsData = [
-    {
-      title: t('solution.solutions.camera.title'),
-      description: t('solution.solutions.camera.description'),
-      imageUrl: '/src/pages/solution/imgs/1.png',
-    },
-    {
-      title: t('solution.solutions.security.title'),
-      description: t('solution.solutions.security.description'),
-      imageUrl: '/src/pages/solution/imgs/2.png',
-    },
-    {
-      title: t('solution.solutions.nlp.title'),
-      description: t('solution.solutions.nlp.description'),
-      imageUrl: '/src/pages/solution/imgs/3.png',
-    },
-    {
-      title: t('solution.solutions.cloud.title'),
-      description: t('solution.solutions.cloud.description'),
-      imageUrl: '/src/pages/solution/imgs/4.png',
-    },
-    {
-      title: t('solution.solutions.custom.title'),
-      description: t('solution.solutions.custom.description'),
-      imageUrl: '/src/pages/solution/imgs/5.png',
-    },
-  ];
+  {
+    title: t('solution.solutions.camera.title'),
+    description: t('solution.solutions.camera.description'),
+    imageUrl: img1Slu,
+  },
+  {
+    title: t('solution.solutions.security.title'),
+    description: t('solution.solutions.security.description'),
+    imageUrl: img2Slu,
+  },
+  {
+    title: t('solution.solutions.nlp.title'),
+    description: t('solution.solutions.nlp.description'),
+    imageUrl: img3Slu,
+  },
+  {
+    title: t('solution.solutions.cloud.title'),
+    description: t('solution.solutions.cloud.description'),
+    imageUrl: img4Slu,
+  },
+  {
+    title: t('solution.solutions.custom.title'),
+    description: t('solution.solutions.custom.description'),
+    imageUrl: img5Slu,
+  },
+];
 
   const handleClick = index => {
     setExpandedIndex(expandedIndex === index ? null : index);
@@ -185,7 +199,7 @@ const Solution = () => {
       <div
         className="relative h-120 flex items-center justify-center text-white text-3xl font-semibold"
         style={{
-          backgroundImage: "url('/src/assets/Img/bannerpage.png')",
+          backgroundImage: `url(${banner})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center',
         }}

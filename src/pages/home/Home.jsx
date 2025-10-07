@@ -4,6 +4,18 @@ import { NavLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import ThreeDSlider from '../../components/ThreeDSlider';
 
+import bannerImage from '../../assets/Img/banner.png';
+import since2007 from '../../assets/Img/since2007.png';
+import communityservice from  "../../assets/Img/communityservice.svg"
+import idea from  "../../assets/Img/idea.svg"
+import growup from  "../../assets/Img/growup.svg"
+import palmcap from "../../assets/Img/palmcap.png"
+import mobile from  "../../assets/Img/mobile.png"
+import logo_gtel from  "../../assets/Img/logo_gtel.svg"
+import bocauservice from  "../../assets/Img/bocauservice.png"
+
+
+
 const Home = () => {
   const { t } = useTranslation();
 
@@ -11,7 +23,7 @@ const Home = () => {
     <>
       <div className={`${styles.banner} relative`}>
         <img
-          src="src/assets/Img/banner.png"
+          src={bannerImage}
           alt=""
           className={styles.bannerImg}
         />
@@ -37,7 +49,7 @@ const Home = () => {
           </div>
           <div className={styles.cardImage}>
             <img
-              src="src/assets/Img/since2007.png"
+              src={since2007}
               alt="Hình ảnh mạng lưới công nghệ"
               className={styles.cardImageImg}
             />
@@ -51,7 +63,7 @@ const Home = () => {
           <div className={styles.goalsGrid}>
             <div className={styles.goalCard}>
               <img
-                src="src/assets/Img/communityservice.svg"
+                src={communityservice}
                 alt="Community Services"
                 className={styles.goalCardImg}
               />
@@ -64,7 +76,7 @@ const Home = () => {
             </div>
             <div className={styles.goalCard}>
               <img
-                src="src/assets/Img/idea.svg"
+                src={idea}
                 alt="Creating New Ideas"
                 className={styles.goalCardImg}
               />
@@ -73,7 +85,7 @@ const Home = () => {
             </div>
             <div className={styles.goalCard}>
               <img
-                src="src/assets/Img/growup.svg"
+                src={growup}
                 alt="Development & Improvement"
                 className={styles.goalCardImg}
               />
@@ -95,28 +107,28 @@ const Home = () => {
           <div className={styles.partnersGrid}>
             <div className={styles.partnerLogo}>
               <img
-                src="src/assets/Img/palmcap.png"
+                src={palmcap}
                 alt="Palms Capital"
                 className={styles.partnerLogoImg}
               />
             </div>
             <div className={styles.partnerLogo}>
               <img
-                src="src/assets/Img/mobile.png"
+                src={mobile}
                 alt="Mobifone"
                 className={styles.partnerLogoImg}
               />
             </div>
             <div className={styles.partnerLogo}>
               <img
-                src="src/assets/Img/logo_gtel.svg"
+                src={logo_gtel}
                 alt="Viettel"
                 className={styles.partnerLogoImg}
               />
             </div>
             <div className={styles.partnerLogo}>
               <img
-                src="src/assets/Img/bocauservice.png"
+                src={bocauservice}
                 alt="Techcombank"
                 className={styles.partnerLogoImg}
               />
