@@ -48,70 +48,71 @@
   "about": {
     "title": "About Us",
     "aboutPalmtek": "About PalmTek",
-    "aboutText1": "With many years of experience accompanying businesses and units in the technology field, PalmTek is proud to bring advanced technology solutions, helping to optimize performance, improve operational efficiency and contribute to the overall development of the organization and the country.",
-    "aboutText2": "We focus on core solutions such as digital transformation using AI, smart monitoring devices, cloud computing, security, smart payments, digital banking and finance, along with 'Made by Vietnam' solutions bearing the mark of domestic technology.",
-    "aboutText3": "PalmTek – a trusted partner for effective and safe digital transformation.",
+    "aboutText1": "With years of experience collaborating with enterprises and public organizations, PalmTek delivers innovative technology solutions that enhance efficiency, improve performance, and support sustainable development for organizations and the nation.",
+    "aboutText2": "We focus on key solutions such as AI-driven digital transformation, smart surveillance devices, cloud computing, cybersecurity, smart payment, digital banking and finance, as well as “Made by Vietnam” solutions that proudly carry the imprint of domestic innovation ",
+    "aboutText3": "PalmTek – Your trusted partner for secure and effective digital transformation. ",
     "visionTitle": "Our Vision",
     "visionText1": "PalmTek aspires to become a leading technology enterprise, pioneering in innovation and sustainable development.",
     "visionText2": "We are committed to creating breakthrough solutions, accompanying the nation on its digital transformation journey, while contributing to improving quality of life and fostering social progress.",
     "journeyTitle": "History",
     "timeline": {
       "2007": {
-        "title": "Establishment of VIEGRID",
-        "content": "In 2007, VIEGRID Company was established, marking the beginning of the pioneering journey in the field of information technology and digital transformation in Vietnam. This is the predecessor of PalmTek Innovation Joint Stock Company, laying the foundation for the innovative and effective solutions that the company pursues later."
+        "title": "Founding of VIEGRID",
+        "content": "In 2007, VIEGRID was established, marking the beginning of a pioneering journey in information technology and digital transformation in Vietnam. This was the predecessor of PalmTek Innovation JSC, laying the foundation for the innovative and effective solutions the company would pursue in the future."
       },
       "2008": {
-        "title": "Translation Innovation with VIEGRID",
+        "title": "Innovation in Translation with VIEGRID",
         "content": [
-          "Provide software products for employee tracking for companies in Singapore.",
-          "Develop English-Vietnamese translation solution BOCOHAN V-LANG."
+          "Provided telecommunications security monitoring software to a company in Singapore.",
+          "Developed the BOCOHAN V-LANG English–Vietnamese translation solution."
         ]
       },
       "2009": {
-        "title": "Remote Work System Project",
-        "content": "Implement the project to build a safe remote work system via the Internet for the People's Committee of Quang Ninh province - The project that originated ideas about network security and V-AZUR."
+        "title": "Remote Working System Project",
+        "content": "Implemented a secure remote working system for the Quang Ninh Provincial People’s Committee. This project laid the groundwork for concepts in cybersecurity and the development of the V-AZUR platform."
       },
       "2010": {
-        "title": "Release of BOCOHAN/V-LANG Solution",
+        "title": "Solution Releases",
         "content": [
-          "- Complete development of BOCOHAN/V-LANG translation solution with Chinese version.",
-          "- Provide BOCOHAN/V-LANG for World Bank translation project, Vietnam News Agency, VTC Digital Television to support the translation and broadcasting process.",
-          "- The V-AZUR network security solution completed the research and development phase."
+          "- Further developed the BOCOHAN/V-LANG translation solution with a Chinese version.",
+          "- Supplied BOCOHAN/V-LANG for the World Bank’s translation project..",
+          "- Provided BOCOHAN/V-LANG to the Vietnam News Agency and VTC Digital Television to support translation and broadcasting.",
+          "- Completed R&D phase of the V-AZUR cybersecurity solution."
         ]
       },
       "2012": {
-        "title": "V-AZUR Product Testing",
+        "title": "Testing of V-AZUR",
         "content": [
-          "The High-Tech Crime Prevention and Control Bureau (C50) conducted testing of V-AZUR products according to the cooperation categories between C50, Institute of Information Technology - VNU, VIEGRID.",
-          "C50 evaluated the level of network security for the solution according to Official Dispatch No. 1675/C50-P1."
+          "The Department of High-Tech Crime Prevention and Control (C50) has tested the V-AZUR product according to the cooperation categories between C50, the Institute of Information Technology - VNU, and VIEGRID.",
+          "C50 has assessed the level of cybersecurity for the solution according to Official Dispatch No. 1675/C50-P1."
         ]
       },
       "2013": {
-        "title": "Release of V-AZUR Solution",
+        "title": "V-AZUR Deployment to Partners",
         "content": [
-          "Provide V-AZUR to the Informatics Department - Ministry of Finance; Information Center - Ministry of Construction, General Department of Archives; Banking Informatics Department - State Bank & Department of Science and Technology - Ministry of Industry and Trade.",
-          "Provide business software for Department of Information and Communications of Hanoi, Thua Thien Hue, Ho Chi Minh City, Office of Quang Ninh Provincial People's Committee, Ministry of Industry and Trade, Ministry of Finance, Ministry of Construction..."
+          "Supplied V-AZUR to the IT Department of the Ministry of Finance; Information Center of the Ministry of Construction; National Archives; IT Department of the State Bank of Vietnam; and the Department of Science and Technology of the Ministry of Industry and Trade.",
+          "Provided enterprise software for the Departments of Information and Communications of Hanoi, Thua Thien Hue, and Ho Chi Minh City; the Quang Ninh People’s Committee Office; as well as the Ministry of Industry and Trade, Ministry of Finance, and Ministry of Construction."
         ]
       },
       "2015": {
-        "title": "Sao Khue Award",
-        "content": "In 2015, VIEGRID Communications and Technology Joint Stock Company was honored to receive the Sao Khue Award for the V-AZUR solution, affirming its position in the field of network security. The product is evaluated by creative and effective experts, contributing to improving information security for businesses and state agencies."
+        "title": "Sao Khue Award Recognition",
+        "content": "In 2015, VIEGRID owas honored with the Sao Khue Award for its V-AZUR solution, affirming its position in the field of cybersecurity. The product was highly recognized for its innovation and effectiveness, contributing to enhancing information security for both enterprises and government agencies."
       },
       "2019": {
-        "title": "Network Information Security Solution",
-        "content": "VIEGRID was granted a license to trade in network information security products and services under the 2015 Network Information Security Law. The license confirms that VIEGRID is eligible to provide network security solutions, enhancing credibility and contributing to information security in Vietnam."
+        "title": "Cybersecurity Business License",
+        "content": "VIEGRID was officially licensed to provide cybersecurity products and services under the 2015 Cybersecurity Law, confirming its qualifications to deliver trusted security solutions and strengthening its credibility in Vietnam’s information security sector."
       },
       "2020": {
-        "title": "Development of V-TRANSFORM Solution",
-        "content": "VIEGRID cooperates to develop the V-TRANSFORM Digital Transformation Solution set for ministries, branches, and state agencies."
+        "title": "Development of V-TRANSFORM",
+        "content": "VVIEGRID collaborated to develop the V-TRANSFORM digital transformation solution suite for ministries, agencies, and government organizations."
       },
       "2023": {
-        "title": "Release of V-LAKE Solution",
-        "content": "VIEGRID has successfully researched, developed and applied the V-LAKE Data Platform, a modern data lake model big data storage solution, allowing integration of raw, semi-structured and structured data from various sources. This platform supports real-time data analysis, AI/ML applications and ensures information security according to national standards, contributing to improving the efficiency of digital transformation for Vietnamese organizations and businesses."
+        "title": "V-LAKE Data Platform",
+        "content": "VIEGRID successfully researched, developed, and deployed the V-LAKE Data Platform – a modern data lake solution enabling integration of raw, semi-structured, and structured data from diverse sources. The platform supports real-time analytics, AI/ML applications, and complies with national security standards, enhancing digital transformation efficiency for Vietnamese organizations and enterprises."
       },
       "2025": {
         "title": "PalmTek - A New Chapter",
-        "content": "In 2025, VIEGRID officially changed its name to PalmTek, marking a new development phase with a focus on expanding technology and information security solutions. This change not only reflects the brand repositioning strategy but also aims to enhance international competitiveness, continuing to support digital transformation for state agencies and businesses in Vietnam."
+        "content": "In 2025, VIEGRID officially rebranded as PalmTek, marking a new phase of development focused on expanding digital technology and cybersecurity solutions. This transformation reflects a strategic brand repositioning and aims to enhance international competitiveness while continuing to support digital transformation for both government bodies and enterprises in Vietnam."
       }
     }
   },
