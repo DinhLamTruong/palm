@@ -3,6 +3,7 @@ import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
 import { useTranslation } from 'react-i18next';
 import banner from '../../assets/Img/bannerpage.png';
+import icons_arrow_left from '../../assets/Img/icons_arrow_left.png';
 
 const Contact = () => {
   const [submitMessage, setSubmitMessage] = useState('');
@@ -48,7 +49,9 @@ const Contact = () => {
         style={{ backgroundImage: `url(${banner})` }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <h1 className="relative text-white text-6xl font-medium">{t('contact.title')}</h1>
+        <h1 className="relative text-white text-6xl font-medium">
+          {t('contact.title')}
+        </h1>
       </header>
 
       {/* Contact Form Section */}
@@ -122,30 +125,22 @@ const Contact = () => {
                     className="text-red-600 text-sm mt-1"
                   />
                 </div>
-                <button
-                  type="submit"
-                  disabled={isSubmitting}
-                  className="inline-flex items-center px-6 py-2 border border-red-600 text-red-600 font-semibold rounded-full hover:bg-red-600 hover:text-white transition disabled:opacity-50"
-                >
-                  {isSubmitting ? t('contact.button.sending') : t('contact.button.send')}
-                  <svg
-                    className="ml-2 w-4 h-4"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
+                <div className='flex justify-end items-center'>
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="inline-flex items-center px-6 py-2 border border-red-600 text-red-600 font-semibold rounded-full hover:bg-red-600 hover:text-white transition disabled:opacity-50"
                   >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M9 5l7 7-7 7"
-                    ></path>
-                  </svg>
-                </button>
-                {submitMessage && (
-                  <p className="text-green-600 mt-4">{submitMessage}</p>
-                )}
+                    {isSubmitting
+                      ? t('contact.button.sending')
+                      : t('contact.button.send')}
+
+                    <img src={icons_arrow_left} className="ml-4" />
+                  </button>
+                  {submitMessage && (
+                    <p className="text-green-600 mt-4">{submitMessage}</p>
+                  )}
+                </div>
               </Form>
             )}
           </Formik>

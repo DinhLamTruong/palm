@@ -52,9 +52,9 @@
     "aboutText2": "We focus on core solutions such as digital transformation using AI, smart monitoring devices, cloud computing, security, smart payments, digital banking and finance, along with 'Made by Vietnam' solutions bearing the mark of domestic technology.",
     "aboutText3": "PalmTek – a trusted partner for effective and safe digital transformation.",
     "visionTitle": "Our Vision",
-    "visionText1": "PalmTek aims to become a leading technology enterprise, pioneering innovation and sustainable development.",
-    "visionText2": "We are committed to creating breakthrough solutions, accompanying the nation in the digital transformation journey, building quality capacity together with living and social development reality.",
-    "journeyTitle": "PalmTek's Journey",
+    "visionText1": "PalmTek aspires to become a leading technology enterprise, pioneering in innovation and sustainable development.",
+    "visionText2": "We are committed to creating breakthrough solutions, accompanying the nation on its digital transformation journey, while contributing to improving quality of life and fostering social progress.",
+    "journeyTitle": "History",
     "timeline": {
       "2007": {
         "title": "Establishment of VIEGRID",
@@ -141,16 +141,16 @@
       }
     },
     "products": "Products",
-    "productsDescription": "PalmTek provides specialized security equipment with modern technology, ensuring high efficiency and reliability.",
+    "productsDescription": "PalmTek supplies specialized security equipment with advanced technology, ensuring high efficiency and reliability:",
     "productList": [
-      "Camera surveillance system",
-      "Thermal camera long range",
-      "Narrow gap inspection camera",
-      "Remote optical acoustic listening device",
-      "Through-wall radar",
-      "Anti-drone device"
+      "Surveillance camera systems",
+      "Long-range thermal cameras",
+      "Narrow-gap inspection cameras",
+      "Long-distance acoustic-optical listening devices",
+      "Through-wall radar systems",
+      "Anti-drone devices"
     ],
-    "partnersClients": "Partners and Clients",
+    "partnersClients": "Our Partners and Clients",
     "clients": [
       [
         "Ministry of Public Security",
@@ -159,29 +159,24 @@
         "Ministry of Culture, Sports and Tourism",
         "Ministry of Industry and Trade",
         "Ministry of Finance",
-        "Vietnam News Agency",
-        "Vietnam National University Hanoi",
-        "Vietnam Automation Association"
+        "Vietnam News Agency"
       ],
       [
-        "Education Publishing House",
-        "Youth Publishing House",
+        "Vietnam Education Publishing House",
+        "Tre Publishing House",
         "Kim Dong Publishing House",
         "Literature Publishing House",
-        "National Politics Publishing House - Truth",
-        "University of Labor and Social Affairs",
-        "University of Science and Humanities",
-        "Vietnam Writers Association"
+        "University of Labour and Social Affairs (ULSA)",
+        "Vietnam Writers’ Association"
       ],
       [
-        "Provincial Party Committee - People's Committee of Thua Thien Hue",
-        "Provincial Party Committee - People's Committee of Quang Ninh",
-        "Department of Information and Communications Hanoi",
-        "Department of Information and Communications Ho Chi Minh City",
-        "Department of Information and Communications Thua Thien Hue",
-        "Department of Information and Communications Quang Ninh",
-        "Department of Informatics - Statistics Ministry of Finance",
-        "Translation Center - Ministry of Foreign Affairs"
+        "People's Committee of Thua Thien Hue",
+        "People's Committee of Quang Ninh",
+        "People’s Committee of Hanoi",
+        "Vietnam National University, Hanoi",
+        "University of Social Sciences and Humani",
+        "National Political Publishing House",
+        "Vietnam Automation Association"
       ]
     ]
   },

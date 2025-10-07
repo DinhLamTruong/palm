@@ -1,4 +1,4 @@
-{
+  {
   "nav": {
     "home": "Trang chủ",
     "about": "Về chúng tôi",
@@ -53,8 +53,8 @@
     "aboutText3": "PalmTek – đối tác tin cậy cho chuyển đổi số hiệu quả và an toàn.",
     "visionTitle": "Tầm Nhìn Của Chúng Tôi",
     "visionText1": "PalmTek hướng tới trở thành doanh nghiệp công nghệ hàng đầu, tiên phong đổi mới sáng tạo và phát triển bền vững.",
-    "visionText2": "Chúng tôi cam kết tạo ra các giải pháp đột phá, đồng hành cùng quốc gia trong hành trình chuyển đổi số, xây dựng năng lực chất lượng cùng sống và thực tế phát triển xã hội.",
-    "journeyTitle": "Hành trình PalmTek",
+    "visionText2":"Chúng tôi cam kết tạo ra các giải pháp đột phá, đồng hành cùng quốc gia trong hành trình chuyển đổi số, góp phần nâng cao chất lượng cuộc sống và thúc đẩy sự phát triển xã hội.",
+    "journeyTitle": "Hành trình",
     "timeline": {
       "2007": {
         "title": "Thành lập VIEGRID",
@@ -163,7 +163,7 @@
         "Đại học Quốc gia Hà Nội",
         "Hội tự động hoá Việt Nam"
       ],
-      [
+      [ 
         "Nhà xuất bản Giáo dục",
         "Nhà xuất bản Trẻ",
         "Nhà xuất bản Kim Đồng",
@@ -171,7 +171,7 @@
         "Nhà xuất bản Chính trị Quốc gia - Sự thật",
         "Trường Đại học Lao động - Xã hội",
         "Trường Đại học Khoa học và Nhân văn",
-        "Hội Nhà văn Việt Nam"
+        "Hội Nhà văn Việt Nam"        
       ],
       [
         "Tỉnh ủy - UBND tỉnh thừa thiên huế",

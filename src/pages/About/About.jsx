@@ -90,12 +90,12 @@ const AboutPage = () => {
 
       {/* Section 2 */}
       <section className={styles.section2}>
-        <div className={styles.visionContent}>
+        <div className={`${styles.visionContent} min-w-[1200px] md:min-w-[1440px]`}>
           <h2>{t('about.visionTitle')}</h2>
-          <p>
+          <p className='!max-w-[1400px] text-center mx-auto'>
             {t('about.visionText1')}
           </p>
-          <p>
+          <p className='!max-w-[1100px]'>
             {t('about.visionText2')}
           </p>
         </div>

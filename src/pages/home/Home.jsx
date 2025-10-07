@@ -6,15 +6,14 @@ import ThreeDSlider from '../../components/ThreeDSlider';
 
 import bannerImage from '../../assets/Img/banner.png';
 import since2007 from '../../assets/Img/since2007.png';
-import communityservice from  "../../assets/Img/communityservice.svg"
-import idea from  "../../assets/Img/idea.svg"
-import growup from  "../../assets/Img/growup.svg"
-import palmcap from "../../assets/Img/palmcap.png"
-import mobile from  "../../assets/Img/mobile.png"
-import logo_gtel from  "../../assets/Img/logo_gtel.svg"
-import bocauservice from  "../../assets/Img/bocauservice.png"
-
-
+import communityservice from '../../assets/Img/communityservice.svg';
+import idea from '../../assets/Img/idea.svg';
+import growup from '../../assets/Img/growup.svg';
+import palmcap from '../../assets/Img/palmcap.png';
+import mobile from '../../assets/Img/mobile.png';
+import logo_gtel from '../../assets/Img/logo_gtel.svg';
+import bocauservice from '../../assets/Img/bocauservice.png';
+import icons_arrow_left from '../../assets/Img/icons_arrow_left.png';
 
 const Home = () => {
   const { t } = useTranslation();
@@ -22,11 +21,7 @@ const Home = () => {
   return (
     <>
       <div className={`${styles.banner} relative`}>
-        <img
-          src={bannerImage}
-          alt=""
-          className={styles.bannerImg}
-        />
+        <img src={bannerImage} alt="" className={styles.bannerImg} />
         <NavLink to="/about" className={styles.contactButton}>
           <button className={styles.bannerButton}>
             {t('home.discoverNow')}
@@ -43,9 +38,16 @@ const Home = () => {
             <h2 className={styles.cardTitle}>{t('home.established2007')}</h2>
             <p className={styles.cardText}>{t('home.aboutText1')}</p>
             <p className={styles.cardText}>{t('home.aboutText2')}</p>
-            <NavLink to="/about" className={styles.cardButton}>
-              <button className="mt-6">{t('home.aboutUs')}</button>
-            </NavLink>
+            <div className="flex justify-center mt-6">
+              <NavLink
+                to="/about"
+                className="inline-flex items-center px-6 py-2 border-2 border-red-600 text-red-600 font-bold rounded-full uppercase tracking-wider hover:bg-red-600 hover:text-white transition-all"
+                aria-label={t('home.aboutUs')}
+              >
+                <span className="text-xl">{t('home.aboutUs')}</span>
+                <img src={icons_arrow_left} className='ml-4' />
+              </NavLink>
+            </div>
           </div>
           <div className={styles.cardImage}>
             <img
@@ -59,7 +61,9 @@ const Home = () => {
       <div className={styles.container}>
         {/* Mục tiêu & Tầm nhìn Section */}
         <section className={styles.section} id="goals">
-          <h2 className={`${styles.sectionTitle} font-bold`}>{t('home.goalsVision')}</h2>
+          <h2 className={`${styles.sectionTitle} font-bold`}>
+            {t('home.goalsVision')}
+          </h2>
           <div className={styles.goalsGrid}>
             <div className={styles.goalCard}>
               <img
@@ -103,7 +107,9 @@ const Home = () => {
 
         {/* Đối tác chiến lược Section */}
         <section className={`${styles.section} mt-12`} id="partners">
-          <h2 className={`${styles.sectionTitle} font-bold`}>{t('home.strategicPartners')}</h2>
+          <h2 className={`${styles.sectionTitle} font-bold`}>
+            {t('home.strategicPartners')}
+          </h2>
           <div className={styles.partnersGrid}>
             <div className={styles.partnerLogo}>
               <img

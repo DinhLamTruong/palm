@@ -42,7 +42,7 @@ export default function Footer() {
 
           <div className="footerRight">
             <div className="newsletter">
-              <h3>{t('footer.newsletterTitle')}</h3>
+              <h3 className='font-bold min-w-[500px]'>{t('footer.newsletterTitle')}</h3>
               <form
                 className="newsletterForm"
                 onSubmit={handleNewsletterSubmit}
