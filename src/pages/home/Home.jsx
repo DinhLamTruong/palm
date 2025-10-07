@@ -21,31 +21,35 @@ const Home = () => {
   return (
     <>
       <div className={`${styles.banner} relative`}>
-        <img src={bannerImage} alt="" className={styles.bannerImg} />
-        <NavLink to="/about" className={styles.contactButton}>
+        <img
+          src={bannerImage}
+          alt=""
+          className={`${styles.bannerImg} !h-[380px]`}
+        />
+        <NavLink to="/about" className={`${styles.contactButton}`}>
           <button className={styles.bannerButton}>
             {t('home.discoverNow')}
           </button>
-          <h4 className="flex flex-col absolute left-30 top-1/2 -translate-y-1/2 z-10 cursor-pointer text-white text-5xl shadow p-3 font-medium leading-[1.25]">
-            <span>{t('home.bannerLine1')}</span>
-            <span>{t('home.bannerLine2')}</span>
-          </h4>
         </NavLink>
+        <span className="flex flex-col absolute left-36 top-1/2 -translate-y-1/2 z-10 cursor-pointer text-4xl text-white shadow p-3 font-medium leading-[1.45]">
+          <p>{t('home.bannerLine1')}</p>
+          <p>{t('home.bannerLine2')}</p>
+        </span>
       </div>
       <div className={styles.containerSince}>
-        <div className={styles.card}>
+        <div className={`${styles.card} !h-120`}>
           <div className={styles.cardContent}>
-            <h2 className={styles.cardTitle}>{t('home.established2007')}</h2>
-            <p className={styles.cardText}>{t('home.aboutText1')}</p>
-            <p className={styles.cardText}>{t('home.aboutText2')}</p>
+            <h2 className={`${styles.cardText} !text-[20px]`}>{t('home.established2007')}</h2>
+            <p className={`${styles.cardText} !text-[25px]`}>{t('home.aboutText1')}</p>
+            <p className={`${styles.cardText} !text-[25px]`}>{t('home.aboutText2')}</p>
             <div className="flex justify-center mt-6">
               <NavLink
                 to="/about"
-                className="inline-flex items-center px-6 py-2 border-2 border-red-600 text-red-600 font-bold rounded-full uppercase tracking-wider hover:bg-red-600 hover:text-white transition-all"
+                className="inline-flex items-center w-[195px] h-[40px] px-5 py-1.5 border-2 border-red-600 text-red-600 font-bold rounded-full uppercase tracking-wider hover:bg-red-600 hover:text-white transition-all"
                 aria-label={t('home.aboutUs')}
               >
-                <span className="text-xl">{t('home.aboutUs')}</span>
-                <img src={icons_arrow_left} className='ml-4' />
+                <span className="text-[15px]">{t('home.aboutUs')}</span>
+                <img src={icons_arrow_left} className="ml-2" />
               </NavLink>
             </div>
           </div>
@@ -53,7 +57,7 @@ const Home = () => {
             <img
               src={since2007}
               alt="Hình ảnh mạng lưới công nghệ"
-              className={styles.cardImageImg}
+              className={`${styles.cardImageImg} !h-80 mt-10`}
             />
           </div>
         </div>
@@ -61,7 +65,7 @@ const Home = () => {
       <div className={styles.container}>
         {/* Mục tiêu & Tầm nhìn Section */}
         <section className={styles.section} id="goals">
-          <h2 className={`${styles.sectionTitle} font-bold`}>
+          <h2 className={`${styles.sectionTitle} !text-3xl`}>
             {t('home.goalsVision')}
           </h2>
           <div className={styles.goalsGrid}>
@@ -107,32 +111,32 @@ const Home = () => {
 
         {/* Đối tác chiến lược Section */}
         <section className={`${styles.section} mt-12`} id="partners">
-          <h2 className={`${styles.sectionTitle} font-bold`}>
+          <h2 className={`${styles.sectionTitle} !text-3xl`}>
             {t('home.strategicPartners')}
           </h2>
           <div className={styles.partnersGrid}>
-            <div className={styles.partnerLogo}>
+            <div className={`${styles.partnerLogo} !w-40 !h-20`}>
               <img
                 src={palmcap}
                 alt="Palms Capital"
                 className={styles.partnerLogoImg}
               />
             </div>
-            <div className={styles.partnerLogo}>
+            <div className={`${styles.partnerLogo} !w-40 !h-20`}>
               <img
                 src={mobile}
                 alt="Mobifone"
                 className={styles.partnerLogoImg}
               />
             </div>
-            <div className={styles.partnerLogo}>
+            <div className={`${styles.partnerLogo} !w-40 !h-20`}>
               <img
                 src={logo_gtel}
                 alt="Viettel"
                 className={styles.partnerLogoImg}
               />
             </div>
-            <div className={styles.partnerLogo}>
+            <div className={`${styles.partnerLogo} !w-40 !h-20`}>
               <img
                 src={bocauservice}
                 alt="Techcombank"

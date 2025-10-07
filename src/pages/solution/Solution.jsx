@@ -15,7 +15,6 @@ import img3Slu from '../../assets/imgsSolution/3.png';
 import img4Slu from '../../assets/imgsSolution/4.png';
 import img5Slu from '../../assets/imgsSolution/5.png';
 
-
 const partnersLogos = [
   { src: img1, alt: 'Mobifone' },
   { src: img2, alt: 'Gtel' },
@@ -31,32 +30,32 @@ const TechnologySolutions = () => {
   const scrollRef = useRef(null);
 
   const technologySolutionsData = [
-  {
-    title: t('solution.solutions.camera.title'),
-    description: t('solution.solutions.camera.description'),
-    imageUrl: img1Slu,
-  },
-  {
-    title: t('solution.solutions.security.title'),
-    description: t('solution.solutions.security.description'),
-    imageUrl: img2Slu,
-  },
-  {
-    title: t('solution.solutions.nlp.title'),
-    description: t('solution.solutions.nlp.description'),
-    imageUrl: img3Slu,
-  },
-  {
-    title: t('solution.solutions.cloud.title'),
-    description: t('solution.solutions.cloud.description'),
-    imageUrl: img4Slu,
-  },
-  {
-    title: t('solution.solutions.custom.title'),
-    description: t('solution.solutions.custom.description'),
-    imageUrl: img5Slu,
-  },
-];
+    {
+      title: t('solution.solutions.camera.title'),
+      description: t('solution.solutions.camera.description'),
+      imageUrl: img1Slu,
+    },
+    {
+      title: t('solution.solutions.security.title'),
+      description: t('solution.solutions.security.description'),
+      imageUrl: img2Slu,
+    },
+    {
+      title: t('solution.solutions.nlp.title'),
+      description: t('solution.solutions.nlp.description'),
+      imageUrl: img3Slu,
+    },
+    {
+      title: t('solution.solutions.cloud.title'),
+      description: t('solution.solutions.cloud.description'),
+      imageUrl: img4Slu,
+    },
+    {
+      title: t('solution.solutions.custom.title'),
+      description: t('solution.solutions.custom.description'),
+      imageUrl: img5Slu,
+    },
+  ];
 
   const handleClick = index => {
     setExpandedIndex(expandedIndex === index ? null : index);
@@ -89,7 +88,7 @@ const TechnologySolutions = () => {
 
       <div
         ref={scrollRef}
-        className="flex space-x-4 overflow-x-auto scrollbar-hide scroll-smooth"
+        className="flex space-x-4 overflow-x-hidden scrollbar-hide scroll-smooth"
       >
         {technologySolutionsData.map((item, index) => {
           const isExpanded = expandedIndex === index;
@@ -97,26 +96,31 @@ const TechnologySolutions = () => {
             <div
               key={index}
               onClick={() => handleClick(index)}
-              className={`relative min-w-[337px] h-[503px] rounded-lg overflow-hidden flex-shrink-0 cursor-pointer group transition-all duration-700 ${
+              className={`relative min-w-[240px] h-[360px] rounded-lg overflow-hidden flex-shrink-0 cursor-pointer group transition-all duration-700 ${
                 isExpanded ? 'scale-110 z-10' : ''
               }`}
             >
               <img
                 src={item.imageUrl}
                 alt={item.title}
-                className="w-full h-full object-cover brightness-75 transition duration-300 group-hover:brightness-50"
+                className="w-full h-[360px] object-cover brightness-75 transition duration-300 group-hover:brightness-50"
               />
-              <div className="absolute bottom-4 left-4 text-white font-semibold text-sm md:text-base transition-opacity duration-300">
+              <div className="absolute left-4 bottom-4 transition-all group-hover:z-100 transform group-hover:-translate-y-70 text-white font-semibold text-sm md:text-base transition-opacity duration-700">
                 {item.title}
               </div>
               <div
-                className={`absolute inset-0 bg-black/30 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-all duration-700 p-4 flex items-center transform translate-y-4 group-hover:translate-y-0 ${
+                className={`absolute inset-0 bg-black/20 bg-opacity-60 opacity-0 group-hover:opacity-100 transition-all duration-700 p-4 flex items-center transform translate-y-4 group-hover:translate-y-0 ${
                   isExpanded ? 'opacity-100 translate-y-0' : ''
                 }`}
               >
-                <p className="text-white text-sm md:text-base whitespace-pre-line transition-all duration-700">
-                  {item.description}
-                </p>
+                <div
+                  className={`group-hover:mt-20 max-h-60 overflow-y-auto text-white text-sm md:text-base pr-2 transform transition-all duration-500 translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 custom-scrollbar`}
+                  style={{ scrollbarGutter: 'stable' }}
+                >
+                  <p className="whitespace-pre-line leading-relaxed">
+                    {item.description}
+                  </p>
+                </div>
               </div>
             </div>
           );
@@ -197,7 +201,7 @@ const Solution = () => {
     <div className="min-h-screen bg-gray-50">
       {/* Banner Section */}
       <div
-        className="relative h-120 flex items-center justify-center text-white text-3xl font-semibold"
+        className="relative h-100 flex items-center justify-center text-white text-3xl font-semibold"
         style={{
           backgroundImage: `url(${banner})`,
           backgroundSize: 'cover',

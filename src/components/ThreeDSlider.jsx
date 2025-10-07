@@ -53,7 +53,7 @@ const ThreeDSlider = () => {
 
   return (
     <div className="w-full py-10 bg-white">
-      <h2 className="text-center text-3xl font-bold mb-10 text-gray-800">
+      <h2 className="text-center !text-3xl mb-10 text-gray-800">
         {t('home.featuredSolutions')}
       </h2>
 
@@ -78,7 +78,7 @@ const ThreeDSlider = () => {
           setActiveIndex(swiper.realIndex);
         }}
         onSlideChange={(swiper) => setActiveIndex(swiper.realIndex)}
-        className="max-w-6xl h-90 mx-auto pb-16"
+        className="max-w-3xl h-90 mx-auto pb-16"
       >
         {images.map((item, index) => (
           <SwiperSlide key={index}>
@@ -93,7 +93,7 @@ const ThreeDSlider = () => {
               <img
                 src={item.src}
                 alt={item.title}
-                className="w-full h-74 object-cover"
+                className="w-full h-70 object-cover"
               />
               <div className="absolute bottom-0 left-0 w-full text-center text-white text-lg font-semibold bg-gradient-to-t from-black/60 via-black/20 to-transparent py-3">
                 {item.title} {item.text}

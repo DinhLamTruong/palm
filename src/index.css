@@ -1,0 +1,24 @@
+.custom-scrollbar {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: #ff7a2f rgba(255,255,255,0.08); /* thumb color, track color */
+}
+
+/* WebKit */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(255,255,255,0.06);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ff7a2f; /* orange thumb like mẫu */
+  border-radius: 9999px;
+  border: 2px solid rgba(0,0,0,0.12); /* optional inner border to crisp edge */
+}
+
+/* Khi hover trên vùng, có thể làm nổi thumb */
+.custom-scrollbar:hover::-webkit-scrollbar-thumb {
+  background-color: #ff6a10;
+}

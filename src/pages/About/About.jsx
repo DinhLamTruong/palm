@@ -39,7 +39,7 @@ const AboutPage = () => {
 
   return (
     <div
-      className={styles.mainContainer}
+      className={`${styles.mainContainer} !h-[380px]`}
       style={{ backgroundImage: `url(${bgAbout})` }}
     >
       <div
@@ -69,35 +69,31 @@ const AboutPage = () => {
 
       {/* Section 1 */}
       <section className={styles.section1}>
-        <div className={`${styles.contentWrapper} min-w-[1200px] md:min-w-[1440px]`}>
-          <div className={`${styles.textContent} text-[676C6D] text-2xl`}>
+        <div
+          className={`${styles.contentWrapper} min-w-[1200px] md:min-w-[1440px]`}
+        >
+          <div className={`${styles.textContent} text-[676C6D] !text-2xl`}>
             <h2>{t('about.aboutPalmtek')}</h2>
-            <p>
-              {t('about.aboutText1')}
-            </p>
-            <p>
-              {t('about.aboutText2')}
-            </p>
-            <p>
-              {t('about.aboutText3')}
-            </p>
+            <p>{t('about.aboutText1')}</p>
+            <p>{t('about.aboutText2')}</p>
+            <p>{t('about.aboutText3')}</p>
           </div>
           <div className={styles.imageContent}>
-            <img src={bannerAbout} className="h-24" alt="Technology" />
+            <img src={bannerAbout} className="!h-[280px]" alt="Technology" />
           </div>
         </div>
       </section>
 
       {/* Section 2 */}
       <section className={styles.section2}>
-        <div className={`${styles.visionContent} min-w-[1200px] md:min-w-[1440px]`}>
+        <div
+          className={`${styles.visionContent} min-w-[1200px] md:min-w-[1440px]`}
+        >
           <h2>{t('about.visionTitle')}</h2>
-          <p className='!max-w-[1400px] text-center mx-auto'>
+          <p className="!max-w-[1400px] text-center mx-auto">
             {t('about.visionText1')}
           </p>
-          <p className='!max-w-[1100px]'>
-            {t('about.visionText2')}
-          </p>
+          <p className="!max-w-[1100px]">{t('about.visionText2')}</p>
         </div>
       </section>
 
@@ -111,7 +107,9 @@ const AboutPage = () => {
             {/* Left: Milestones */}
             <div className={styles.timelineLeft}>
               {years.map((year, index) => {
-                const milestone = t(`about.timeline.${year}`, { returnObjects: true });
+                const milestone = t(`about.timeline.${year}`, {
+                  returnObjects: true,
+                });
                 return (
                   <div
                     key={year}

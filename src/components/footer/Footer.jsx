@@ -11,24 +11,30 @@ export default function Footer() {
   };
   return (
     <>
-      <footer className="footer">
+      <footer className="footer !text-gray-700">
         <div className="footerContent">
           <div className="footerLeft">
             <div className="logo">
               <div className="logoIcon">
-                <img className="logofooter" src={Logo} alt="" />
+                <img className="logofooter !w-30 !h-10" src={Logo} alt="" />
               </div>
             </div>
             <div className="companyInfo">
-              <h3>{t('footer.companyName')}</h3>
-              <p>{t('footer.memberOf')}</p>
-              <p>
-                <strong>{t('footer.address')}</strong> {t('footer.addressValue')}
+              <h3 className="text-[#000000] !mb-0 ">
+                {t('footer.companyName')}
+              </h3>
+              <p className="!text-[#000000] leading-[1.2]">
+                {t('footer.memberOf')}
               </p>
-              <p>
-                <strong>{t('footer.contact')}</strong> {t('footer.contactValue')}
+              <p className="!text-[#000000] !font-normal">
+                <strong>{t('footer.address')}</strong>{' '}
+                {t('footer.addressValue')}
               </p>
-              <p>
+              <p className="!text-[#000000] !font-normal">
+                <strong>{t('footer.contact')}</strong>{' '}
+                {t('footer.contactValue')}
+              </p>
+              <p className="!text-[#000000] !font-normal">
                 <strong>{t('footer.email')}</strong> {t('footer.emailValue')}
               </p>
             </div>
@@ -42,12 +48,15 @@ export default function Footer() {
 
           <div className="footerRight">
             <div className="newsletter">
-              <h3 className='font-bold min-w-[500px]'>{t('footer.newsletterTitle')}</h3>
+              <h3 className="!text-[15px] font-bold min-w-[500px]">
+                {t('footer.newsletterTitle')}
+              </h3>
               <form
                 className="newsletterForm"
                 onSubmit={handleNewsletterSubmit}
               >
                 <input
+                  className="text-black placeholder-black"
                   type="email"
                   placeholder={t('footer.emailPlaceholder')}
                   required
@@ -59,7 +68,9 @@ export default function Footer() {
         </div>
 
         <div className="footerBottom">
-          <p>{t('footer.copyright')}</p>
+          <p className="!text-[#333333] !font-normal">
+            {t('footer.copyright')}
+          </p>
         </div>
       </footer>
     </>

@@ -320,9 +320,10 @@
 /* Partners section */
 .partnersGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 40px;
   text-align: center;
+  margin: 0 200px;
 }
 
 .partnerLogo {
@@ -349,7 +350,7 @@
 .bannerButton {
   position: absolute;
   left: 10%;
-  bottom: 16%;
+  bottom: 10%;
   transform: translateY(-50%);
   background-color: white;
   color: #b71c1c;
