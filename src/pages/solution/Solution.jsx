@@ -1,33 +1,6 @@
 import React, { useState, useRef } from 'react';
-import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
-
-const technologySolutionsData = [
-  {
-    title: 'Hệ thống quản lý camera giám sát - tích hợp AI',
-    description: `PalmTek mang đến các giải pháp bảo mật toàn diện, giúp doanh nghiệp phòng ngừa, phát hiện và ứng phó kịp thời với các mối đe dọa mạng. Ứng dụng công nghệ hiện đại kết hợp hệ thống giám sát thông minh, chúng tôi bảo vệ dữ liệu và hạ tầng số, đảm bảo hoạt động liên tục.`,
-    imageUrl: '/src/pages/solution/imgs/1.png',
-  },
-  {
-    title: 'Giải pháp an toàn an ninh mạng',
-    description: `Giải pháp an toàn an ninh mạng của chúng tôi giúp bảo vệ hệ thống khỏi các cuộc tấn công mạng, đảm bảo an toàn thông tin và duy trì sự ổn định cho doanh nghiệp.`,
-    imageUrl: '/src/pages/solution/imgs/2.png',
-  },
-  {
-    title: 'Xử lý ngôn ngữ tự nhiên',
-    description: `Công nghệ xử lý ngôn ngữ tự nhiên giúp tự động hóa các tác vụ liên quan đến ngôn ngữ, nâng cao hiệu quả giao tiếp và phân tích dữ liệu.`,
-    imageUrl: '/src/pages/solution/imgs/3.png',
-  },
-  {
-    title: 'Điện toán đám mây',
-    description: `Dịch vụ điện toán đám mây của chúng tôi cung cấp khả năng mở rộng linh hoạt, bảo mật cao và tối ưu chi phí cho doanh nghiệp.`,
-    imageUrl: '/src/pages/solution/imgs/4.png',
-  },
-  {
-    title: 'Nền tảng phần mềm tùy chỉnh',
-    description: `Phát triển nền tảng phần mềm tùy chỉnh đáp ứng chính xác nhu cầu kinh doanh, giúp tối ưu quy trình và nâng cao hiệu suất.`,
-    imageUrl: '/src/pages/solution/imgs/5.png',
-  },
-];
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
+import { useTranslation } from 'react-i18next';
 
 const partnersLogos = [
   { src: '/src/pages/solution/partnersCLients/1.png', alt: 'Mobifone' },
@@ -38,49 +11,44 @@ const partnersLogos = [
   { src: '/src/pages/solution/partnersCLients/6.png', alt: 'Network Optix' },
 ];
 
-const clientsList = [
-  [
-    'Bộ công an',
-    'Bộ Thông tin và Truyền thông',
-    'Bộ ngoại giao',
-    'Bộ Văn hoá Thể thao và Du lịch',
-    'Bộ Công thương',
-    'Bộ Tài chính',
-    'Thông tấn xã Việt Nam',
-    'Đại học Quốc gia Hà Nội',
-    'Hội tự động hoá Việt Nam',
-  ],
-  [
-    'Nhà xuất bản Giáo dục',
-    'Nhà xuất bản Trẻ',
-    'Nhà xuất bản Kim Đồng',
-    'Nhà xuất bản Văn học',
-    'Nhà xuất bản Chính trị Quốc gia - Sự thật',
-    'Trường Đại học Lao động - Xã hội',
-    'Trường Đại học Khoa học và Nhân văn',
-    'Hội Nhà văn Việt Nam',
-  ],
-  [
-    'Tỉnh ủy - UBND tỉnh thừa thiên huế',
-    'Tỉnh ủy - UBND tỉnh Quảng Ninh',
-    'Sở Thông tin và Truyền thông Hà Nội',
-    'Sở Thông tin và Truyền thông TP. Hồ Chí Minh',
-    'Sở Thông tin và Truyền thông Thừa Thiên Huế',
-    'Sở Thông tin và Truyền thông Quảng Ninh',
-    'Cục Tin học - Thống kê Bộ Tài chính',
-    'Trung tâm Biên phiên dịch - Bộ Ngoại giao',
-  ],
-];
-
 const TechnologySolutions = () => {
+  const { t } = useTranslation();
   const [expandedIndex, setExpandedIndex] = useState(null);
   const scrollRef = useRef(null);
 
-  const handleClick = (index) => {
+  const technologySolutionsData = [
+    {
+      title: t('solution.solutions.camera.title'),
+      description: t('solution.solutions.camera.description'),
+      imageUrl: '/src/pages/solution/imgs/1.png',
+    },
+    {
+      title: t('solution.solutions.security.title'),
+      description: t('solution.solutions.security.description'),
+      imageUrl: '/src/pages/solution/imgs/2.png',
+    },
+    {
+      title: t('solution.solutions.nlp.title'),
+      description: t('solution.solutions.nlp.description'),
+      imageUrl: '/src/pages/solution/imgs/3.png',
+    },
+    {
+      title: t('solution.solutions.cloud.title'),
+      description: t('solution.solutions.cloud.description'),
+      imageUrl: '/src/pages/solution/imgs/4.png',
+    },
+    {
+      title: t('solution.solutions.custom.title'),
+      description: t('solution.solutions.custom.description'),
+      imageUrl: '/src/pages/solution/imgs/5.png',
+    },
+  ];
+
+  const handleClick = index => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
-  const scroll = (direction) => {
+  const scroll = direction => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current;
       const scrollTo =
@@ -93,11 +61,13 @@ const TechnologySolutions = () => {
 
   return (
     <section className="my-12 px-6 max-w-7xl mx-auto relative">
-      <h2 className="text-5xl font-bold mb-10">Giải Pháp Công Nghệ</h2>
+      <h2 className="text-5xl font-bold mb-10">
+        {t('solution.technologySolutions')}
+      </h2>
 
       {/* Nút trái */}
       <button
-        onClick={() => scroll("left")}
+        onClick={() => scroll('left')}
         className="absolute -left-3 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-white rounded-full shadow p-3 hover:bg-gray-100"
       >
         <FiChevronLeft className="text-xl" />
@@ -139,9 +109,9 @@ const TechnologySolutions = () => {
         })}
       </div>
 
-        {/* Nút phải */}
+      {/* Nút phải */}
       <button
-        onClick={() => scroll("right")}
+        onClick={() => scroll('right')}
         className="absolute -right-4 top-1/2 -translate-y-1/2 z-10 cursor-pointer bg-white rounded-full shadow p-3 hover:bg-gray-100"
       >
         <FiChevronRight className="text-xl" />
@@ -151,28 +121,32 @@ const TechnologySolutions = () => {
 };
 
 const Product = () => {
+  const { t } = useTranslation();
+  const products = t('solution.productList', { returnObjects: true });
   return (
     <section className="my-12 px-6 max-w-7xl mx-auto leading-[0.72]">
-      <h2 className="text-5xl font-bold mb-4 leading-[0.72] mb-10">Sản Phẩm</h2>
-      <p className="mb-4 text-2xl">
-        PalmTek cung cấp thiết bị an ninh chuyên dụng với công nghệ hiện đại, đảm bảo hiệu quả và độ tin cậy cao.
-      </p>
+      <h2 className="text-5xl font-bold mb-4 leading-[0.72] mb-10">
+        {t('solution.products')}
+      </h2>
+      <p className="mb-4 text-2xl">{t('solution.productsDescription')}</p>
       <ul className="list-disc list-inside space-y-1 text-gray-800 text-2xl ml-10">
-        <li>Hệ thống giám sát camera</li>
-        <li>Camera nhiệt tầm xa</li>
-        <li>Camera soi khe hẹp</li>
-        <li>Thiết bị nghe âm thanh quang học từ xa</li>
-        <li>Radar nhìn xuyên tường</li>
-        <li>Thiết bị chống drone (anti-drone)</li>
+        {products.map((product, index) => (
+          <li key={index}>{product}</li>
+        ))}
       </ul>
     </section>
   );
 };
 
 const PartnersClients = () => {
+  const { t } = useTranslation();
+  const clients = t('solution.clients', { returnObjects: true });
+
   return (
     <section className="my-12 px-6 max-w-7xl mx-auto">
-      <h2 className="text-5xl leading-[0.72] font-bold mb-14">Đối tác và Khách hàng</h2>
+      <h2 className="text-5xl leading-[0.72] font-bold mb-14">
+        {t('solution.partnersClients')}
+      </h2>
       <div className="flex space-x-6 mb-6 overflow-x-auto scrollbar-hide">
         {partnersLogos.map((logo, index) => (
           <div
@@ -191,7 +165,7 @@ const PartnersClients = () => {
         ))}
       </div>
       <div className="bg-white border rounded-lg p-6 grid grid-cols-1 md:grid-cols-3 gap-4 text-lg font-medium text-gray-700">
-        {clientsList.map((column, colIndex) => (
+        {clients.map((column, colIndex) => (
           <ul key={colIndex} className="space-y-1">
             {column.map((client, index) => (
               <li key={index}>{client}</li>
@@ -204,6 +178,7 @@ const PartnersClients = () => {
 };
 
 const Solution = () => {
+  const { t } = useTranslation();
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Banner Section */}
@@ -216,7 +191,9 @@ const Solution = () => {
         }}
       >
         <div className="absolute inset-0 bg-black opacity-40"></div>
-        <h1 className="relative font-medium text-6xl z-10">Giải pháp</h1>
+        <h1 className="relative font-medium text-6xl z-10">
+          {t('solution.title')}
+        </h1>
       </div>
 
       {/* Technology Solutions */}

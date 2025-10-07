@@ -1,14 +1,18 @@
 import React, { useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import * as Yup from 'yup';
+import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
   const [submitMessage, setSubmitMessage] = useState('');
+  const { t } = useTranslation();
 
   const validationSchema = Yup.object({
-    name: Yup.string().required('Họ và tên là bắt buộc'),
-    email: Yup.string().email('Email không hợp lệ').required('Email là bắt buộc'),
-    phone: Yup.string().required('Điện thoại là bắt buộc'),
+    name: Yup.string().required(t('contact.validation.nameRequired')),
+    email: Yup.string()
+      .email(t('contact.validation.emailInvalid'))
+      .required(t('contact.validation.emailRequired')),
+    phone: Yup.string().required(t('contact.validation.phoneRequired')),
     message: Yup.string(),
   });
 
@@ -23,13 +27,13 @@ const Contact = () => {
       });
 
       if (response.ok) {
-        setSubmitMessage('Yêu cầu đã được gửi thành công!');
+        setSubmitMessage(t('contact.messages.success'));
         resetForm();
       } else {
-        setSubmitMessage('Có lỗi xảy ra khi gửi yêu cầu. Vui lòng thử lại.');
+        setSubmitMessage(t('contact.messages.error'));
       }
     } catch {
-      setSubmitMessage('Có lỗi xảy ra khi gửi yêu cầu. Vui lòng thử lại.');
+      setSubmitMessage(t('contact.messages.error'));
     } finally {
       setSubmitting(false);
     }
@@ -43,18 +47,17 @@ const Contact = () => {
         style={{ backgroundImage: "url('/src/assets/Img/bannerpage.png')" }}
       >
         <div className="absolute inset-0 bg-black opacity-50"></div>
-        <h1 className="relative text-white text-6xl font-medium">Liên hệ</h1>
+        <h1 className="relative text-white text-6xl font-medium">{t('contact.title')}</h1>
       </header>
 
       {/* Contact Form Section */}
       <section className="flex-grow container mx-auto px-4 py-12">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-xl font-bold mb-2">
-            Chúng tôi có thể giúp gì cho bạn?
+          <h2 className="text-3xl font-bold mb-2">
+            {t('contact.helpQuestion')}
           </h2>
           <p className="text-gray-600 mb-6 text-sm font-normal">
-            Vui lòng để lại thông tin, chúng tôi sẽ liên lạc trong thời gian sớm
-            nhất.
+            {t('contact.description')}
           </p>
           <Formik
             initialValues={{ name: '', email: '', phone: '', message: '' }}
@@ -67,47 +70,63 @@ const Contact = () => {
                   <Field
                     type="text"
                     name="name"
-                    placeholder="Họ và tên *"
+                    placeholder={t('contact.placeholders.name')}
                     className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600"
                   />
-                  <ErrorMessage name="name" component="div" className="text-red-600 text-sm mt-1" />
+                  <ErrorMessage
+                    name="name"
+                    component="div"
+                    className="text-red-600 text-sm mt-1"
+                  />
                 </div>
                 <div className="flex space-x-4">
                   <div className="flex-1">
                     <Field
                       type="email"
                       name="email"
-                      placeholder="Email *"
+                      placeholder={t('contact.placeholders.email')}
                       className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600"
                     />
-                    <ErrorMessage name="email" component="div" className="text-red-600 text-sm mt-1" />
+                    <ErrorMessage
+                      name="email"
+                      component="div"
+                      className="text-red-600 text-sm mt-1"
+                    />
                   </div>
                   <div className="flex-1">
                     <Field
                       type="tel"
                       name="phone"
-                      placeholder="Điện thoại *"
+                      placeholder={t('contact.placeholders.phone')}
                       className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600"
                     />
-                    <ErrorMessage name="phone" component="div" className="text-red-600 text-sm mt-1" />
+                    <ErrorMessage
+                      name="phone"
+                      component="div"
+                      className="text-red-600 text-sm mt-1"
+                    />
                   </div>
                 </div>
                 <div>
                   <Field
                     as="textarea"
                     name="message"
-                    placeholder="Nội dung"
+                    placeholder={t('contact.placeholders.message')}
                     rows="5"
                     className="w-full border border-gray-300 rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-red-600 resize-none"
                   />
-                  <ErrorMessage name="message" component="div" className="text-red-600 text-sm mt-1" />
+                  <ErrorMessage
+                    name="message"
+                    component="div"
+                    className="text-red-600 text-sm mt-1"
+                  />
                 </div>
                 <button
                   type="submit"
                   disabled={isSubmitting}
                   className="inline-flex items-center px-6 py-2 border border-red-600 text-red-600 font-semibold rounded-full hover:bg-red-600 hover:text-white transition disabled:opacity-50"
                 >
-                  {isSubmitting ? 'Đang gửi...' : 'GỬI YÊU CẦU'}
+                  {isSubmitting ? t('contact.button.sending') : t('contact.button.send')}
                   <svg
                     className="ml-2 w-4 h-4"
                     fill="none"
@@ -123,7 +142,9 @@ const Contact = () => {
                     ></path>
                   </svg>
                 </button>
-                {submitMessage && <p className="text-green-600 mt-4">{submitMessage}</p>}
+                {submitMessage && (
+                  <p className="text-green-600 mt-4">{submitMessage}</p>
+                )}
               </Form>
             )}
           </Formik>

@@ -1,9 +1,12 @@
 import React from 'react';
 import styles from './Home.module.css';
 import { NavLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import ThreeDSlider from '../../components/ThreeDSlider';
 
 const Home = () => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className={`${styles.banner} relative`}>
@@ -13,26 +16,23 @@ const Home = () => {
           className={styles.bannerImg}
         />
         <NavLink to="/about" className={styles.contactButton}>
-          <button className={styles.bannerButton}>Khám Phá Ngay</button>
+          <button className={styles.bannerButton}>
+            {t('home.discoverNow')}
+          </button>
+          <h4 className="flex flex-col absolute left-30 top-1/2 -translate-y-1/2 z-10 cursor-pointer text-white text-5xl shadow p-3 font-medium leading-[1.25]">
+            <span>{t('home.bannerLine1')}</span>
+            <span>{t('home.bannerLine2')}</span>
+          </h4>
         </NavLink>
       </div>
       <div className={styles.containerSince}>
         <div className={styles.card}>
           <div className={styles.cardContent}>
-            <h2 className={styles.cardTitle}>THÀNH LẬP NĂM 2007</h2>
-            <p className={styles.cardText}>
-              PalmTek tự hào là một trong những doanh nghiệp tiên phong trong
-              lĩnh vực công nghệ thông tin và chuyển đổi số tại Việt Nam cũng
-              như khu vực Đông Nam Á.
-            </p>
-            <p className={styles.cardText}>
-              Với đội ngũ chuyên gia giàu kinh nghiệm, chúng tôi hỗ trợ các tổ
-              chức tối ưu hóa quy trình vận hành, nâng cao hiệu quả hoạt động và
-              đảm bảo an toàn thông tin thông qua các giải pháp AI và dữ liệu
-              lớn - thông minh, an toàn, linh hoạt.
-            </p>
+            <h2 className={styles.cardTitle}>{t('home.established2007')}</h2>
+            <p className={styles.cardText}>{t('home.aboutText1')}</p>
+            <p className={styles.cardText}>{t('home.aboutText2')}</p>
             <NavLink to="/about" className={styles.cardButton}>
-              <button className="mt-6">VỀ CHÚNG TÔI</button>
+              <button className="mt-6">{t('home.aboutUs')}</button>
             </NavLink>
           </div>
           <div className={styles.cardImage}>
@@ -47,7 +47,7 @@ const Home = () => {
       <div className={styles.container}>
         {/* Mục tiêu & Tầm nhìn Section */}
         <section className={styles.section} id="goals">
-          <h2 className={styles.sectionTitle}>Mục tiêu & Tầm nhìn</h2>
+          <h2 className={`${styles.sectionTitle} font-bold`}>{t('home.goalsVision')}</h2>
           <div className={styles.goalsGrid}>
             <div className={styles.goalCard}>
               <img
@@ -55,12 +55,11 @@ const Home = () => {
                 alt="Community Services"
                 className={styles.goalCardImg}
               />
-              <h3 className={styles.goalCardTitle}>Phục vụ cộng đồng</h3>
+              <h3 className={styles.goalCardTitle}>
+                {t('home.serveCommunity')}
+              </h3>
               <p className={styles.goalCardText}>
-                PalmTek luôn luôn coi đổi mới sáng tạo là động lực phát triển
-                cốt lõi; Chúng tôi cam kết đồng hành cùng quốc gia trong hành
-                trình chuyển đổi số, hướng tới việc tạo ra các giải pháp công
-                nghệ đột phá để thúc đẩy sự phát triển đất nước
+                {t('home.serveCommunityText')}
               </p>
             </div>
             <div className={styles.goalCard}>
@@ -69,13 +68,8 @@ const Home = () => {
                 alt="Creating New Ideas"
                 className={styles.goalCardImg}
               />
-              <h3 className={styles.goalCardTitle}>Sáng tạo đổi mới</h3>
-              <p className={styles.goalCardText}>
-                PalmTek luôn luôn coi đổi mới sáng tạo là động lực phát triển
-                cốt lõi; Chúng tôi cam kết đồng hành cùng quốc gia trong hành
-                trình chuyển đổi số, hướng tới việc tạo ra các giải pháp công
-                nghệ đột phá để thúc đẩy sự phát triển đất nước
-              </p>
+              <h3 className={styles.goalCardTitle}>{t('home.innovate')}</h3>
+              <p className={styles.goalCardText}>{t('home.innovateText')}</p>
             </div>
             <div className={styles.goalCard}>
               <img
@@ -83,12 +77,11 @@ const Home = () => {
                 alt="Development & Improvement"
                 className={styles.goalCardImg}
               />
-              <h3 className={styles.goalCardTitle}>Phát triển bền vững</h3>
+              <h3 className={styles.goalCardTitle}>
+                {t('home.sustainableDevelopment')}
+              </h3>
               <p className={styles.goalCardText}>
-                PalmTek hướng đến mục tiêu phát triển bền vững thông qua các
-                giải pháp công nghệ tiên tiến đồng hành cùng các tổ chức thực
-                hiện các mục tiêu chiến lược dài hạn, đảm bảo chất lượng và đáp
-                ứng các yêu cầu phát triển của xã hội.
+                {t('home.sustainableDevelopmentText')}
               </p>
             </div>
           </div>
@@ -98,7 +91,7 @@ const Home = () => {
 
         {/* Đối tác chiến lược Section */}
         <section className={`${styles.section} mt-12`} id="partners">
-          <h2 className={styles.sectionTitle}>Đối tác chiến lược</h2>
+          <h2 className={`${styles.sectionTitle} font-bold`}>{t('home.strategicPartners')}</h2>
           <div className={styles.partnersGrid}>
             <div className={styles.partnerLogo}>
               <img

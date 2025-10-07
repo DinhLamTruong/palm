@@ -1,7 +1,10 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import Logo from '../../assets/Img/logo.png'; // Adjust path as needed
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   const handleNewsletterSubmit = e => {
     e.preventDefault();
     // Handle form submission logic here
@@ -17,49 +20,46 @@ export default function Footer() {
               </div>
             </div>
             <div className="companyInfo">
-              <h3>CÔNG TY CỔ PHẦN PALMTEK INNOVATION</h3>
-              <p>Thành viên Palms Capital Group</p>
+              <h3>{t('footer.companyName')}</h3>
+              <p>{t('footer.memberOf')}</p>
               <p>
-                <strong>Địa chỉ:</strong> Tầng 1, CT1 Yên Hòa Parkview, Số 03 Vũ
-                Phạm Hàm,
-                <br />
-                P. Yên Hòa, Q. Cầu Giấy, Hà Nội
+                <strong>{t('footer.address')}</strong> {t('footer.addressValue')}
               </p>
               <p>
-                <strong>Liên hệ:</strong> + 84 28 2200 2989
+                <strong>{t('footer.contact')}</strong> {t('footer.contactValue')}
               </p>
               <p>
-                <strong>Email:</strong> info@palmscapital.vn
+                <strong>{t('footer.email')}</strong> {t('footer.emailValue')}
               </p>
             </div>
           </div>
 
           <div className="footerCenter">
-            <a href="#about">Về chúng tôi</a>
-            <a href="#solutions">Giải pháp</a>
-            <a href="#contact">Liên hệ</a>
+            <a href="#about">{t('footer.aboutUs')}</a>
+            <a href="#solutions">{t('footer.solutions')}</a>
+            <a href="#contact">{t('footer.contact1')}</a>
           </div>
 
           <div className="footerRight">
             <div className="newsletter">
-              <h3>Đăng ký email để nhận tin tức mới nhất từ PalmTek</h3>
+              <h3>{t('footer.newsletterTitle')}</h3>
               <form
                 className="newsletterForm"
                 onSubmit={handleNewsletterSubmit}
               >
                 <input
                   type="email"
-                  placeholder="Nhập email của bạn..."
+                  placeholder={t('footer.emailPlaceholder')}
                   required
                 />
-                <button type="submit">Đăng ký</button>
+                <button type="submit">{t('footer.subscribe')}</button>
               </form>
             </div>
           </div>
         </div>
 
         <div className="footerBottom">
-          <p>© 2007 PalmTek</p>
+          <p>{t('footer.copyright')}</p>
         </div>
       </footer>
     </>

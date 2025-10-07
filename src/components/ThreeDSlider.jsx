@@ -3,36 +3,38 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectCoverflow, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
+import { useTranslation } from 'react-i18next';
 
 const ThreeDSlider = () => {
+  const { t } = useTranslation();
   const [activeIndex, setActiveIndex] = useState(0);
   const swiperRef = useRef(null);
 
   const images = [
     {
       src: "src/assets/Img/V-Lake.jpg",
-      title: "Giải pháp V-Lake:",
-      text: "Nền tảng xử lý dữ liệu",
+      title: t('home.solutions.vLake.title'),
+      text: t('home.solutions.vLake.text'),
     },
     {
       src: "src/assets/Img/V-Transform.jpg",
-      title: "Giải pháp V-Transform:",
-      text: "Nền tảng chuyển đổi số",
+      title: t('home.solutions.vTransform.title'),
+      text: t('home.solutions.vTransform.text'),
     },
     {
       src: "src/assets/Img/V-Lang.jpg",
-      title: "Giải pháp V-Lang:",
-      text: "AI hỗ trợ dịch thuật",
+      title: t('home.solutions.vLang.title'),
+      text: t('home.solutions.vLang.text'),
     },
     {
       src: "src/assets/Img/V-lab.jpg",
-      title: "Giải pháp V-Lab:",
-      text: "Thiết kế và phát triển phần mềm",
+      title: t('home.solutions.vLab.title'),
+      text: t('home.solutions.vLab.text'),
     },
     {
       src: "src/assets/Img/V-Azur.jpg",
-      title: "Giải pháp V-Azur:",
-      text: "Giải pháp an ninh mạng",
+      title: t('home.solutions.vAzur.title'),
+      text: t('home.solutions.vAzur.text'),
     },
   ];
 
@@ -45,7 +47,7 @@ const ThreeDSlider = () => {
   return (
     <div className="w-full py-10 bg-white">
       <h2 className="text-center text-3xl font-bold mb-10 text-gray-800">
-        Giải pháp nổi bật
+        {t('home.featuredSolutions')}
       </h2>
 
       <Swiper

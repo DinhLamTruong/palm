@@ -1,0 +1,232 @@
+{
+  "nav": {
+    "home": "Trang chủ",
+    "about": "Về chúng tôi",
+    "solutions": "Giải pháp",
+    "contact": "Liên hệ"
+  },
+  "home": {
+    "bannerLine1": "Giải pháp công nghệ | Sản phẩm công nghệ",
+    "bannerLine2": "An toàn thông tin | Hệ thống quản lý",
+    "discoverNow": "Khám Phá Ngay",
+    "established2007": "THÀNH LẬP NĂM 2007",
+    "aboutText1": "PalmTek tự hào là một trong những doanh nghiệp tiên phong trong lĩnh vực công nghệ thông tin và chuyển đổi số tại Việt Nam cũng như khu vực Đông Nam Á.",
+    "aboutText2": "Với đội ngũ chuyên gia giàu kinh nghiệm, chúng tôi hỗ trợ các tổ chức tối ưu hóa quy trình vận hành, nâng cao hiệu quả hoạt động và đảm bảo an toàn thông tin thông qua các giải pháp AI và dữ liệu lớn - thông minh, an toàn, linh hoạt.",
+    "aboutUs": "VỀ CHÚNG TÔI",
+    "goalsVision": "Mục tiêu & Tầm nhìn",
+    "serveCommunity": "Phục vụ cộng đồng",
+    "serveCommunityText": "PalmTek luôn luôn coi đổi mới sáng tạo là động lực phát triển cốt lõi; Chúng tôi cam kết đồng hành cùng quốc gia trong hành trình chuyển đổi số, hướng tới việc tạo ra các giải pháp công nghệ đột phá để thúc đẩy sự phát triển đất nước",
+    "innovate": "Sáng tạo đổi mới",
+    "innovateText": "PalmTek luôn luôn coi đổi mới sáng tạo là động lực phát triển cốt lõi; Chúng tôi cam kết đồng hành cùng quốc gia trong hành trình chuyển đổi số, hướng tới việc tạo ra các giải pháp công nghệ đột phá để thúc đẩy sự phát triển đất nước",
+    "sustainableDevelopment": "Phát triển bền vững",
+    "sustainableDevelopmentText": "PalmTek hướng đến mục tiêu phát triển bền vững thông qua các giải pháp công nghệ tiên tiến đồng hành cùng các tổ chức thực hiện các mục tiêu chiến lược dài hạn, đảm bảo chất lượng và đáp ứng các yêu cầu phát triển của xã hội.",
+    "strategicPartners": "Đối tác chiến lược",
+    "featuredSolutions": "Giải pháp nổi bật",
+    "solutions": {
+      "vLake": {
+        "title": "Giải pháp V-Lake:",
+        "text": "Nền tảng xử lý dữ liệu"
+      },
+      "vTransform": {
+        "title": "Giải pháp V-Transform:",
+        "text": "Nền tảng chuyển đổi số"
+      },
+      "vLang": {
+        "title": "Giải pháp V-Lang:",
+        "text": "AI hỗ trợ dịch thuật"
+      },
+      "vLab": {
+        "title": "Giải pháp V-Lab:",
+        "text": "Thiết kế và phát triển phần mềm"
+      },
+      "vAzur": {
+        "title": "Giải pháp V-Azur:",
+        "text": "Giải pháp an ninh mạng"
+      }
+    }
+  },
+  "about": {
+    "title": "Về chúng tôi",
+    "aboutPalmtek": "Về PalmTek",
+    "aboutText1": "Với nhiều năm kinh nghiệm đồng hành cùng doanh nghiệp và các đơn vị trong lĩnh vực công nghệ, PalmTek tự hào mang đến những giải pháp công nghệ tiên tiến, giúp tối ưu hiệu suất, nâng cao hiệu quả vận hành và góp phần thúc đẩy sự phát triển chung của tổ chức và đất nước.",
+    "aboutText2": "Chúng tôi tập trung vào các giải pháp trong tâm như chuyển đổi số ứng dụng AI, thiết bị giám sát thông minh, điện toán đám mây, bảo mật, thanh toán thông minh, ngân hàng và tài chính số, cùng những giải pháp 'Made by Vietnam' mang dấu ấn công nghệ trong nước.",
+    "aboutText3": "PalmTek – đối tác tin cậy cho chuyển đổi số hiệu quả và an toàn.",
+    "visionTitle": "Tầm Nhìn Của Chúng Tôi",
+    "visionText1": "PalmTek hướng tới trở thành doanh nghiệp công nghệ hàng đầu, tiên phong đổi mới sáng tạo và phát triển bền vững.",
+    "visionText2": "Chúng tôi cam kết tạo ra các giải pháp đột phá, đồng hành cùng quốc gia trong hành trình chuyển đổi số, xây dựng năng lực chất lượng cùng sống và thực tế phát triển xã hội.",
+    "journeyTitle": "Hành trình PalmTek",
+    "timeline": {
+      "2007": {
+        "title": "Thành lập VIEGRID",
+        "content": "Vào năm 2007, Công ty VIEGRID được thành lập, đánh dấu bước khởi đầu cho hành trình tiên phong trong lĩnh vực công nghệ thông tin và chuyển đổi số tại Việt Nam. Đây là tiền thân của Công ty Cổ Phần PalmTek Innovation, đặt nền móng cho các giải pháp sáng tạo và hiệu quả mà công ty theo đuổi sau này."
+      },
+      "2008": {
+        "title": "Đổi mới Dịch thuật với VIEGRID",
+        "content": [
+          "Cung cấp sản phẩm phần mềm theo dõi ân nhân viên thông cho công ty tại Singapore.",
+          "Phát triển giải pháp dịch thuật Anh - Việt BOCOHAN V-LANG."
+        ]
+      },
+      "2009": {
+        "title": "Dự án Hệ thống làm việc từ xa",
+        "content": "Thực hiện dự án Xây dựng hệ thống làm việc từ xa qua mạng Internet an toàn cho UBND tỉnh Quảng Ninh – Dự án khởi nguồn cho các ý tưởng về an toàn, an ninh mạng và V-AZUR."
+      },
+      "2010": {
+        "title": "Phát hành giải pháp BOCOHAN/V-LANG",
+        "content": [
+          "- Phát triển hoàn thiện giải pháp dịch thuật BOCOHAN/V-LANG với phiên bản tiếng Trung.",
+          "- Cung cấp BOCOHAN/ V-LANG cho dự án Dịch thuật của World Bank, Thống tấn Xã Việt Nam, Đài Truyền hình kỹ thuật số VTC để hỗ trợ quá trình phiên dịch, truyền hình.",
+          "- Bộ giải pháp An toàn an ninh mạng V-AZUR được hoàn thành giai đoạn nghiên cứu và phát triển."
+        ]
+      },
+      "2012": {
+        "title": "Kiểm thử sản phẩm V-AZUR",
+        "content": [
+          "Cục Cảnh sát phòng, chống tội phạm sử dụng công nghệ cao (C50) đã tiến hành kiểm thử sản phẩm V-AZUR theo các danh mục hợp tác giữa C50, Viện CNTT - ĐHQG, VIEGRID.",
+          "C50 đã đánh giá về mức độ an toàn an ninh mạng cho giải pháp theo công văn số 1675/C50-P1."
+        ]
+      },
+      "2013": {
+        "title": "Phát hành giải pháp V-AZUR",
+        "content": [
+          "Cung cấp V-AZUR cho Cục tin học - Bộ Tài Chính; Trung tâm thông tin - Bộ Xây Dựng, Tổng Cục Lưu trữ; Cục Tin học Ngân hàng – Ngân hàng nhà nước & Vụ Khoa học công nghệ - Bộ Công Thương.",
+          "Cung cấp phần mềm nghiệp vụ cho Sở Thông tin & Truyền thông TP Hà Nội, Thừa Thiên Huế, TP Hồ Chí Minh, Văn phòng UBND tỉnh Quảng Ninh, Bộ Công Thương, Bộ Tài Chính, Bộ Xây Dựng..."
+        ]
+      },
+      "2015": {
+        "title": "Danh hiệu Sao Khuê",
+        "content": "Năm 2015, Công ty Cổ phần Truyền thông và Công nghệ VIEGRID vinh dự nhận giải thưởng Sao Khuê cho giải pháp V-AZUR, khẳng định vị thế trong lĩnh vực bảo mật mạng. Sản phẩm được đánh giá các nhà tình sáng tạo và hiệu quả, góp phần nâng cao an toàn thông tin cho doanh nghiệp và cơ quan nhà nước."
+      },
+      "2019": {
+        "title": "Giải pháp An toàn thông tin mạng",
+        "content": "VIEGRID được cấp Giấy phép kinh doanh sản phẩm, dịch vụ an toàn thông tin mạng theo Luật An toàn thông tin mạng 2015. Giấy phép xác nhận VIEGRID đủ điều kiện cung cấp giải pháp bảo mật mạng, nâng cao uy tín và đóng góp vào an toàn thông tin tại Việt Nam."
+      },
+      "2020": {
+        "title": "Phát triển Giải pháp V-TRANSFORM",
+        "content": "VIEGRID hợp tác phát triển bộ Giải pháp chuyển đổi số V-TRANSFORM cho các bộ, ban, ngành, cơ quan Nhà nước."
+      },
+      "2023": {
+        "title": "Phát hành giải pháp V-LAKE",
+        "content": "VIEGRID đã nghiên cứu, phát triển và ứng dụng thành công Nền tảng dữ liệu Data Platform V-LAKE, một giải pháp kho trữ dữ liệu lớn theo mô hình data lake hiện đại, cho phép tích hợp dữ liệu thô, bán cấu trúc và có cấu trúc từ nhiều nguồn khác nhau. Nền tảng này hỗ trợ phân tích dữ liệu thời gian thực, ứng dụng AI/ML và đảm bảo an toàn thông tin theo tiêu chuẩn quốc gia, góp phần nâng cao hiệu quả chuyển đổi số cho các tổ chức và doanh nghiệp Việt Nam."
+      },
+      "2025": {
+        "title": "PalmTek - Một chương mới",
+        "content": "Vào năm 2025, VIEGRID chính thức đổi tên thành PalmTek, đánh dấu một giai đoạn phát triển mới với trọng tâm mở rộng các giải pháp công nghệ và an toàn thông tin. Sự thay đổi này không chỉ phản ánh chiến lược tái định vị thương hiệu mà còn nhằm tăng cường khả năng cạnh tranh quốc tế, tiếp tục hỗ trợ chuyển đổi số cho cơ quan Nhà nước và doanh nghiệp Việt Nam."
+      }
+    }
+  },
+  "solution": {
+    "title": "Giải pháp",
+    "technologySolutions": "Giải Pháp Công Nghệ",
+    "solutions": {
+      "camera": {
+        "title": "Hệ thống quản lý camera giám sát - tích hợp AI",
+        "description": "PalmTek mang đến các giải pháp bảo mật toàn diện, giúp doanh nghiệp phòng ngừa, phát hiện và ứng phó kịp thời với các mối đe dọa mạng. Ứng dụng công nghệ hiện đại kết hợp hệ thống giám sát thông minh, chúng tôi bảo vệ dữ liệu và hạ tầng số, đảm bảo hoạt động liên tục."
+      },
+      "security": {
+        "title": "Giải pháp an toàn an ninh mạng",
+        "description": "Giải pháp an toàn an ninh mạng của chúng tôi giúp bảo vệ hệ thống khỏi các cuộc tấn công mạng, đảm bảo an toàn thông tin và duy trì sự ổn định cho doanh nghiệp."
+      },
+      "nlp": {
+        "title": "Xử lý ngôn ngữ tự nhiên",
+        "description": "Công nghệ xử lý ngôn ngữ tự nhiên giúp tự động hóa các tác vụ liên quan đến ngôn ngữ, nâng cao hiệu quả giao tiếp và phân tích dữ liệu."
+      },
+      "cloud": {
+        "title": "Điện toán đám mây",
+        "description": "Dịch vụ điện toán đám mây của chúng tôi cung cấp khả năng mở rộng linh hoạt, bảo mật cao và tối ưu chi phí cho doanh nghiệp."
+      },
+      "custom": {
+        "title": "Nền tảng phần mềm tùy chỉnh",
+        "description": "Phát triển nền tảng phần mềm tùy chỉnh đáp ứng chính xác nhu cầu kinh doanh, giúp tối ưu quy trình và nâng cao hiệu suất."
+      }
+    },
+    "products": "Sản Phẩm",
+    "productsDescription": "PalmTek cung cấp thiết bị an ninh chuyên dụng với công nghệ hiện đại, đảm bảo hiệu quả và độ tin cậy cao.",
+    "productList": [
+      "Hệ thống giám sát camera",
+      "Camera nhiệt tầm xa",
+      "Camera soi khe hẹp",
+      "Thiết bị nghe âm thanh quang học từ xa",
+      "Radar nhìn xuyên tường",
+      "Thiết bị chống drone (anti-drone)"
+    ],
+    "partnersClients": "Đối tác và Khách hàng",
+    "clients": [
+      [
+        "Bộ công an",
+        "Bộ Thông tin và Truyền thông",
+        "Bộ ngoại giao",
+        "Bộ Văn hoá Thể thao và Du lịch",
+        "Bộ Công thương",
+        "Bộ Tài chính",
+        "Thông tấn xã Việt Nam",
+        "Đại học Quốc gia Hà Nội",
+        "Hội tự động hoá Việt Nam"
+      ],
+      [
+        "Nhà xuất bản Giáo dục",
+        "Nhà xuất bản Trẻ",
+        "Nhà xuất bản Kim Đồng",
+        "Nhà xuất bản Văn học",
+        "Nhà xuất bản Chính trị Quốc gia - Sự thật",
+        "Trường Đại học Lao động - Xã hội",
+        "Trường Đại học Khoa học và Nhân văn",
+        "Hội Nhà văn Việt Nam"
+      ],
+      [
+        "Tỉnh ủy - UBND tỉnh thừa thiên huế",
+        "Tỉnh ủy - UBND tỉnh Quảng Ninh",
+        "Sở Thông tin và Truyền thông Hà Nội",
+        "Sở Thông tin và Truyền thông TP. Hồ Chí Minh",
+        "Sở Thông tin và Truyền thông Thừa Thiên Huế",
+        "Sở Thông tin và Truyền thông Quảng Ninh",
+        "Cục Tin học - Thống kê Bộ Tài chính",
+        "Trung tâm Biên phiên dịch - Bộ Ngoại giao"
+      ]
+    ]
+  },
+  "contact": {
+    "title": "Liên hệ",
+    "contactUs": "Liên hệ với chúng tôi",
+    "contactText": "Chúng tôi rất mong được lắng nghe từ bạn! Hãy liên hệ với chúng tôi qua các kênh sau để được hỗ trợ nhanh chóng và hiệu quả.",
+    "helpQuestion": "Chúng tôi có thể giúp gì cho bạn?",
+    "description": "Vui lòng để lại thông tin, chúng tôi sẽ liên lạc trong thời gian sớm nhất.",
+    "placeholders": {
+      "name": "Họ và tên *",
+      "email": "Email *",
+      "phone": "Điện thoại *",
+      "message": "Nội dung"
+    },
+    "button": {
+      "send": "GỬI YÊU CẦU",
+      "sending": "Đang gửi..."
+    },
+    "messages": {
+      "success": "Yêu cầu đã được gửi thành công!",
+      "error": "Có lỗi xảy ra khi gửi yêu cầu. Vui lòng thử lại."
+    },
+    "validation": {
+      "nameRequired": "Họ và tên là bắt buộc",
+      "emailInvalid": "Email không hợp lệ",
+      "emailRequired": "Email là bắt buộc",
+      "phoneRequired": "Điện thoại là bắt buộc"
+    }
+  },
+   "footer": {
+    "companyName": "CÔNG TY CỔ PHẦN PALMTEK INNOVATION",
+    "memberOf": "Thành viên Palms Capital Group",
+    "address": "Địa chỉ:",
+    "addressValue": "Tầng 1, CT1 Yên Hòa Parkview, Số 03 Vũ Phạm Hàm, P. Yên Hòa, Q. Cầu Giấy, Hà Nội",
+    "contact": "Liên hệ:",
+    "contactValue": "+ 84 28 2200 2989",
+    "email": "Email:",
+    "emailValue": "info@palmscapital.vn",
+    "aboutUs": "Về chúng tôi",
+    "solutions": "Giải pháp",
+    "contact1": "Liên hệ",
+    "newsletterTitle": "Đăng ký email để nhận tin tức mới nhất từ PalmTek",
+    "emailPlaceholder": "Nhập email của bạn...",
+    "subscribe": "Đăng ký",
+    "copyright": "© 2007 PalmTek"
+  }
+}

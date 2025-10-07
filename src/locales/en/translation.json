@@ -1,0 +1,233 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "solutions": "Solutions",
+    "contact": "Contact"
+  },
+  "home": {
+    "bannerLine1": "Technology Solutions | Technology Products",
+    "bannerLine2": "Information Security | Management Systems",
+    "discoverNow": "Discover Now",
+    "established2007": "ESTABLISHED IN 2007",
+    "aboutText1": "PalmTek is proud to be one of the pioneering enterprises in the field of information technology and digital transformation in Vietnam as well as the Southeast Asia region.",
+    "aboutText2": "With a team of experienced experts, we support organizations in optimizing operational processes, improving operational efficiency and ensuring information security through smart, safe and flexible AI and big data solutions.",
+    "aboutUs": "ABOUT US",
+    "goalsVision": "Goals & Vision",
+    "serveCommunity": "Serve Community",
+    "serveCommunityText": "PalmTek always considers innovation as the core driving force for development; We are committed to accompanying the nation in the digital transformation journey, aiming to create breakthrough technology solutions to promote national development",
+    "innovate": "Innovate",
+    "innovateText": "PalmTek always considers innovation as the core driving force for development; We are committed to accompanying the nation in the digital transformation journey, aiming to create breakthrough technology solutions to promote national development",
+    "sustainableDevelopment": "Sustainable Development",
+    "sustainableDevelopmentText": "PalmTek aims for sustainable development through advanced technology solutions that accompany organizations in achieving long-term strategic goals, ensuring quality and meeting the development requirements of society.",
+    "strategicPartners": "Strategic Partners",
+    "featuredSolutions": "Featured Solutions",
+    "solutions": {
+      "vLake": {
+        "title": "V-Lake Solution:",
+        "text": "Data Processing Platform"
+      },
+      "vTransform": {
+        "title": "V-Transform Solution:",
+        "text": "Digital Transformation Platform"
+      },
+      "vLang": {
+        "title": "V-Lang Solution:",
+        "text": "AI Translation Support"
+      },
+      "vLab": {
+        "title": "V-Lab Solution:",
+        "text": "Software Design and Development"
+      },
+      "vAzur": {
+        "title": "V-Azur Solution:",
+        "text": "Network Security Solution"
+      }
+    }
+  },
+  "about": {
+    "title": "About Us",
+    "aboutPalmtek": "About PalmTek",
+    "aboutText1": "With many years of experience accompanying businesses and units in the technology field, PalmTek is proud to bring advanced technology solutions, helping to optimize performance, improve operational efficiency and contribute to the overall development of the organization and the country.",
+    "aboutText2": "We focus on core solutions such as digital transformation using AI, smart monitoring devices, cloud computing, security, smart payments, digital banking and finance, along with 'Made by Vietnam' solutions bearing the mark of domestic technology.",
+    "aboutText3": "PalmTek – a trusted partner for effective and safe digital transformation.",
+    "visionTitle": "Our Vision",
+    "visionText1": "PalmTek aims to become a leading technology enterprise, pioneering innovation and sustainable development.",
+    "visionText2": "We are committed to creating breakthrough solutions, accompanying the nation in the digital transformation journey, building quality capacity together with living and social development reality.",
+    "journeyTitle": "PalmTek's Journey",
+    "timeline": {
+      "2007": {
+        "title": "Establishment of VIEGRID",
+        "content": "In 2007, VIEGRID Company was established, marking the beginning of the pioneering journey in the field of information technology and digital transformation in Vietnam. This is the predecessor of PalmTek Innovation Joint Stock Company, laying the foundation for the innovative and effective solutions that the company pursues later."
+      },
+      "2008": {
+        "title": "Translation Innovation with VIEGRID",
+        "content": [
+          "Provide software products for employee tracking for companies in Singapore.",
+          "Develop English-Vietnamese translation solution BOCOHAN V-LANG."
+        ]
+      },
+      "2009": {
+        "title": "Remote Work System Project",
+        "content": "Implement the project to build a safe remote work system via the Internet for the People's Committee of Quang Ninh province - The project that originated ideas about network security and V-AZUR."
+      },
+      "2010": {
+        "title": "Release of BOCOHAN/V-LANG Solution",
+        "content": [
+          "- Complete development of BOCOHAN/V-LANG translation solution with Chinese version.",
+          "- Provide BOCOHAN/V-LANG for World Bank translation project, Vietnam News Agency, VTC Digital Television to support the translation and broadcasting process.",
+          "- The V-AZUR network security solution completed the research and development phase."
+        ]
+      },
+      "2012": {
+        "title": "V-AZUR Product Testing",
+        "content": [
+          "The High-Tech Crime Prevention and Control Bureau (C50) conducted testing of V-AZUR products according to the cooperation categories between C50, Institute of Information Technology - VNU, VIEGRID.",
+          "C50 evaluated the level of network security for the solution according to Official Dispatch No. 1675/C50-P1."
+        ]
+      },
+      "2013": {
+        "title": "Release of V-AZUR Solution",
+        "content": [
+          "Provide V-AZUR to the Informatics Department - Ministry of Finance; Information Center - Ministry of Construction, General Department of Archives; Banking Informatics Department - State Bank & Department of Science and Technology - Ministry of Industry and Trade.",
+          "Provide business software for Department of Information and Communications of Hanoi, Thua Thien Hue, Ho Chi Minh City, Office of Quang Ninh Provincial People's Committee, Ministry of Industry and Trade, Ministry of Finance, Ministry of Construction..."
+        ]
+      },
+      "2015": {
+        "title": "Sao Khue Award",
+        "content": "In 2015, VIEGRID Communications and Technology Joint Stock Company was honored to receive the Sao Khue Award for the V-AZUR solution, affirming its position in the field of network security. The product is evaluated by creative and effective experts, contributing to improving information security for businesses and state agencies."
+      },
+      "2019": {
+        "title": "Network Information Security Solution",
+        "content": "VIEGRID was granted a license to trade in network information security products and services under the 2015 Network Information Security Law. The license confirms that VIEGRID is eligible to provide network security solutions, enhancing credibility and contributing to information security in Vietnam."
+      },
+      "2020": {
+        "title": "Development of V-TRANSFORM Solution",
+        "content": "VIEGRID cooperates to develop the V-TRANSFORM Digital Transformation Solution set for ministries, branches, and state agencies."
+      },
+      "2023": {
+        "title": "Release of V-LAKE Solution",
+        "content": "VIEGRID has successfully researched, developed and applied the V-LAKE Data Platform, a modern data lake model big data storage solution, allowing integration of raw, semi-structured and structured data from various sources. This platform supports real-time data analysis, AI/ML applications and ensures information security according to national standards, contributing to improving the efficiency of digital transformation for Vietnamese organizations and businesses."
+      },
+      "2025": {
+        "title": "PalmTek - A New Chapter",
+        "content": "In 2025, VIEGRID officially changed its name to PalmTek, marking a new development phase with a focus on expanding technology and information security solutions. This change not only reflects the brand repositioning strategy but also aims to enhance international competitiveness, continuing to support digital transformation for state agencies and businesses in Vietnam."
+      }
+    }
+  },
+  "solution": {
+    "title": "Solutions",
+    "technologySolutions": "Technology Solutions",
+    "solutions": {
+      "camera": {
+        "title": "AI-Integrated Camera Surveillance Management System",
+        "description": "PalmTek provides comprehensive security solutions to help businesses prevent, detect and respond promptly to cyber threats. Applying modern technology combined with intelligent monitoring systems, we protect data and digital infrastructure, ensuring continuous operation."
+      },
+      "security": {
+        "title": "Network Security Solutions",
+        "description": "Our network security solutions help protect systems from cyber attacks, ensure information security and maintain stability for businesses."
+      },
+      "nlp": {
+        "title": "Natural Language Processing",
+        "description": "Natural language processing technology helps automate language-related tasks, improving communication efficiency and data analysis."
+      },
+      "cloud": {
+        "title": "Cloud Computing",
+        "description": "Our cloud computing services provide flexible scalability, high security and cost optimization for businesses."
+      },
+      "custom": {
+        "title": "Custom Software Platform",
+        "description": "Develop custom software platforms that meet business needs precisely, helping optimize processes and improve performance."
+      }
+    },
+    "products": "Products",
+    "productsDescription": "PalmTek provides specialized security equipment with modern technology, ensuring high efficiency and reliability.",
+    "productList": [
+      "Camera surveillance system",
+      "Thermal camera long range",
+      "Narrow gap inspection camera",
+      "Remote optical acoustic listening device",
+      "Through-wall radar",
+      "Anti-drone device"
+    ],
+    "partnersClients": "Partners and Clients",
+    "clients": [
+      [
+        "Ministry of Public Security",
+        "Ministry of Information and Communications",
+        "Ministry of Foreign Affairs",
+        "Ministry of Culture, Sports and Tourism",
+        "Ministry of Industry and Trade",
+        "Ministry of Finance",
+        "Vietnam News Agency",
+        "Vietnam National University Hanoi",
+        "Vietnam Automation Association"
+      ],
+      [
+        "Education Publishing House",
+        "Youth Publishing House",
+        "Kim Dong Publishing House",
+        "Literature Publishing House",
+        "National Politics Publishing House - Truth",
+        "University of Labor and Social Affairs",
+        "University of Science and Humanities",
+        "Vietnam Writers Association"
+      ],
+      [
+        "Provincial Party Committee - People's Committee of Thua Thien Hue",
+        "Provincial Party Committee - People's Committee of Quang Ninh",
+        "Department of Information and Communications Hanoi",
+        "Department of Information and Communications Ho Chi Minh City",
+        "Department of Information and Communications Thua Thien Hue",
+        "Department of Information and Communications Quang Ninh",
+        "Department of Informatics - Statistics Ministry of Finance",
+        "Translation Center - Ministry of Foreign Affairs"
+      ]
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "contactUs": "Contact Us",
+    "contactText": "We are always ready to assist you. Please fill out the form below or reach us through the provided contact information.",
+    "sendMessage": "Send Message",
+    "helpQuestion": "How can we help you?",
+    "description": "Please leave your information, we will contact you as soon as possible.",
+    "placeholders": {
+      "name": "Full name *",
+      "email": "Email *",
+      "phone": "Phone *",
+      "message": "Content"
+    },
+    "button": {
+      "send": "SEND REQUEST",
+      "sending": "Sending..."
+    },
+    "messages": {
+      "success": "Your request has been sent successfully!",
+      "error": "An error occurred while sending the request. Please try again."
+    },
+    "validation": {
+      "nameRequired": "Full name is required",
+      "emailInvalid": "Invalid email",
+      "emailRequired": "Email is required",
+      "phoneRequired": "Phone is required"
+    }
+  },
+   "footer": {
+    "companyName": "PALMTEK INNOVATION JOINT STOCK COMPANY",
+    "memberOf": "Member of Palms Capital Group",
+    "address": "Address:",
+    "addressValue": "Floor 1, CT1 Yen Hoa Parkview, No. 03 Vu Pham Ham, Yen Hoa Ward, Cau Giay District, Hanoi",
+    "contact": "Contact:",
+    "contactValue": "+ 84 28 2200 2989",
+    "email": "Email:",
+    "emailValue": "info@palmscapital.vn",
+    "aboutUs": "About Us",
+    "solutions": "Solutions",
+    "contact1": "Contact",
+    "newsletterTitle": "Subscribe to email to receive the latest news from PalmTek",
+    "emailPlaceholder": "Enter your email...",
+    "subscribe": "Subscribe",
+    "copyright": "© 2007 PalmTek"
+  }
+}
