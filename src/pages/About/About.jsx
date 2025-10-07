@@ -39,7 +39,7 @@ const AboutPage = () => {
 
   return (
     <div
-      className={`${styles.mainContainer} !h-[380px]`}
+      className={`${styles.mainContainer} min-h-screen`}
       style={{ backgroundImage: `url(${bgAbout})` }}
     >
       <div
@@ -49,7 +49,7 @@ const AboutPage = () => {
         <img
           src={bannerImage}
           alt="Banner"
-          style={{ width: '100%', height: 'auto' }}
+          style={{ width: '100%', height: '400px' }}
         />
         <h1
           style={{
