@@ -43,7 +43,7 @@ const AboutPage = () => {
       style={{ backgroundImage: `url(${bgAbout})` }}
     >
       <div
-        className={styles.banner}
+        className={`${styles.banner} w-full`}
         style={{ position: 'relative', textAlign: 'center' }}
       >
         <img
@@ -69,38 +69,40 @@ const AboutPage = () => {
 
       {/* Section 1 */}
       <section className={styles.section1}>
-        <div
-          className={`${styles.contentWrapper} min-w-[1200px] md:min-w-[1440px]`}
-        >
-          <div className={`${styles.textContent} text-[676C6D] !text-2xl`}>
-            <h2>{t('about.aboutPalmtek')}</h2>
+        <div className={`${styles.contentWrapper}`}>
+          <div
+            className={`${styles.textContent} !w-[300px] xl:max-w-[800px] xxl:max-w-[800px]  mr-2 xl:mr-30 xxl:mr-30 !text-[676C6D] !text-lg xl:!text-2xl xxl:!text-3xl leading-[1.33] `}
+          >
+            {/* <h2>{t('about.aboutPalmtek')}</h2> */}
             <p>{t('about.aboutText1')}</p>
             <p>{t('about.aboutText2')}</p>
             <p>{t('about.aboutText3')}</p>
           </div>
           <div className={styles.imageContent}>
-            <img src={bannerAbout} className="!h-[280px]" alt="Technology" />
+            <img
+              src={bannerAbout}
+              className="!h-[185px] !w-[300px] xl:!h-[385px] xl:!w-[663px] xxl:!h-[550px] xxl:!w-[900px]"
+              alt="Technology"
+            />
           </div>
         </div>
       </section>
 
       {/* Section 2 */}
       <section className={styles.section2}>
-        <div
-          className={`${styles.visionContent} min-w-[1200px] md:min-w-[1440px]`}
-        >
-          <h2>{t('about.visionTitle')}</h2>
-          <p className="!max-w-[1400px] text-center mx-auto">
-            {t('about.visionText1')}
-          </p>
-          <p className="!max-w-[1100px]">{t('about.visionText2')}</p>
+        <div className={`${styles.visionContent}`}>
+          <h2 className="!mb-0 font-medium tracking-normal">
+            {t('about.visionTitle')}
+          </h2>
+          <p className=" text-center mx-auto">{t('about.visionText1')}</p>
+          <p>{t('about.visionText2')}</p>
         </div>
       </section>
 
       {/* Timeline Section */}
       <section className={styles.timelineSection}>
         <div className={styles.container}>
-          <h1 className={styles.timelineHeader}>
+          <h1 className={`${styles.timelineHeader} !font-bold`}>
             {t('about.journeyTitle')} <span>PalmTek</span>
           </h1>
           <div className={styles.timelineWrapper}>

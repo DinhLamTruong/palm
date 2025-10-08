@@ -73,13 +73,13 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 21%;
+  /* gap: 21%; */
   flex-wrap: wrap;
 }
 
 .footerLeft {
-  flex: 1;
-  min-width: 300px;
+  /* flex: 1; */
+  min-width: 500px !important;
 }
 
 .footer .logo {
@@ -95,6 +95,9 @@
 
 .logoIcon {
   /* Add any specific styles if needed */
+}
+.companyInfo{
+  min-width: 200px !important;
 }
 
 .companyInfo h3 {

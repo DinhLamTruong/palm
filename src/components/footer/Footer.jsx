@@ -14,12 +14,12 @@ export default function Footer() {
       <footer className="footer !text-gray-700">
         <div className="footerContent">
           <div className="footerLeft">
-            <div className="logo">
+            <div className="logo !w-[300px]">
               <div className="logoIcon">
-                <img className="logofooter !w-30 !h-10" src={Logo} alt="" />
+                <img className="logofooter !w-[140px] !h-[40px]" src={Logo} alt="" />
               </div>
             </div>
-            <div className="companyInfo">
+            <div className="companyInfo !w-[386px]">
               <h3 className="text-[#000000] !mb-0 ">
                 {t('footer.companyName')}
               </h3>
@@ -40,10 +40,16 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="footerCenter">
-            <a href="#about">{t('footer.aboutUs')}</a>
-            <a href="#solutions">{t('footer.solutions')}</a>
-            <a href="#contact">{t('footer.contact1')}</a>
+          <div className="footerCenter min-w-[300px]">
+            <a className="!text-base !font-normal" href="#about">
+              {t('footer.aboutUs')}
+            </a>
+            <a className="!text-base !font-normal" href="#solutions">
+              {t('footer.solutions')}
+            </a>
+            <a className="!text-base !font-normal" href="#contact">
+              {t('footer.contact1')}
+            </a>
           </div>
 
           <div className="footerRight">

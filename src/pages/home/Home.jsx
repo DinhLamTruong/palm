@@ -20,44 +20,56 @@ const Home = () => {
 
   return (
     <>
-      <div className={`${styles.banner} relative`}>
+      <div className={`${styles.banner} relative overflow-x-hidden`}>
         <img
           src={bannerImage}
           alt=""
-          className={`${styles.bannerImg} !h-[380px]`}
+          className={`${styles.bannerImg} w-full object-cover !h-[380px]`}
         />
         <NavLink to="/about" className={`${styles.contactButton}`}>
           <button className={styles.bannerButton}>
             {t('home.discoverNow')}
           </button>
         </NavLink>
-        <span className="flex flex-col absolute left-36 top-1/2 -translate-y-1/2 z-10 cursor-pointer text-4xl text-white shadow p-3 font-medium leading-[1.45]">
+        <span className="flex flex-col absolute left-12 xl:left-36 xxl:left-36 top-1/2 -translate-y-1/2 z-10 cursor-pointer text-2xl xxl:text-4xl xxl:text-5xl text-white shadow p-3 font-medium leading-[1.45]">
           <p>{t('home.bannerLine1')}</p>
           <p>{t('home.bannerLine2')}</p>
         </span>
       </div>
       <div className={styles.containerSince}>
-        <div className={`${styles.card} !h-120`}>
+        <div className={`${styles.card} !h-160`}>
           <div className={styles.cardContent}>
-            <h2 className={`${styles.cardText} !text-[20px]`}>{t('home.established2007')}</h2>
-            <p className={`${styles.cardText} !text-[25px]`}>{t('home.aboutText1')}</p>
-            <p className={`${styles.cardText} !text-[25px]`}>{t('home.aboutText2')}</p>
+            <h2
+              className={`${styles.cardText} !text-[18px] xl:!text-[30px] xxl:!text-[30px] `}
+            >
+              {t('home.established2007')}
+            </h2>
+            <p
+              className={`${styles.cardText} !text-[18px] xl:!text-[30px] xxl:!text-[30px]`}
+            >
+              {t('home.aboutText1')}
+            </p>
+            <p
+              className={`${styles.cardText} !text-[18px] xl:!text-[30px] xxl:!text-[30px]`}
+            >
+              {t('home.aboutText2')}
+            </p>
             <div className="flex justify-center mt-6">
               <NavLink
                 to="/about"
                 className="inline-flex items-center w-[195px] h-[40px] px-5 py-1.5 border-2 border-red-600 text-red-600 font-bold rounded-full uppercase tracking-wider hover:bg-red-600 hover:text-white transition-all"
                 aria-label={t('home.aboutUs')}
               >
-                <span className="text-[15px]">{t('home.aboutUs')}</span>
-                <img src={icons_arrow_left} className="ml-2" />
+                <span className="flex-1 text-[12px] xl:text-[16px] xxl:text-[16px]">{t('home.aboutUs')}</span>
+                <img src={icons_arrow_left}/>
               </NavLink>
             </div>
           </div>
-          <div className={styles.cardImage}>
+          <div className={`${styles.cardImage} ml-0 md:ml-20 lg:ml-20 xl:ml-20 xxl:ml-20`}>
             <img
               src={since2007}
               alt="Hình ảnh mạng lưới công nghệ"
-              className={`${styles.cardImageImg} !h-80 mt-10`}
+              className={`${styles.cardImageImg} !h-[300px] xl:!h-[400px] xx;!h-[400px] max-w-ful mt-14`}
             />
           </div>
         </div>
@@ -65,33 +77,44 @@ const Home = () => {
       <div className={styles.container}>
         {/* Mục tiêu & Tầm nhìn Section */}
         <section className={styles.section} id="goals">
-          <h2 className={`${styles.sectionTitle} !text-3xl`}>
+          <h2
+            className={`${styles.sectionTitle} !text-3xl flex justify-start font-bold`}
+          >
             {t('home.goalsVision')}
           </h2>
           <div className={styles.goalsGrid}>
-            <div className={styles.goalCard}>
+            {/* FF0000 */}
+            <div
+              className={`${styles.goalCard} hover:!bg-[#FF0061] hover:bg-opacity-2`}
+            >
               <img
                 src={communityservice}
                 alt="Community Services"
                 className={styles.goalCardImg}
               />
-              <h3 className={styles.goalCardTitle}>
+              <h3 className={`${styles.goalCardTitle} `}>
                 {t('home.serveCommunity')}
               </h3>
-              <p className={styles.goalCardText}>
+              <p className={`${styles.goalCardText} `}>
                 {t('home.serveCommunityText')}
               </p>
             </div>
-            <div className={styles.goalCard}>
+            {/* hover:bg-gradient-to-r hover:from-[#4FC3F7] hover:to-[#29B6F6] transition-all duration-300 p-4 rounded-lg */}
+            <div
+              className={`${styles.goalCard} hover:!bg-gradient-to-r hover:!from-[#4FC3F7] hover:!to-[#29B6F6] transition-all duration-300 p-4 rounded-lg`}
+            >
               <img
                 src={idea}
                 alt="Creating New Ideas"
-                className={styles.goalCardImg}
+                className={`${styles.goalCardImg} pointer-events-none`}
               />
               <h3 className={styles.goalCardTitle}>{t('home.innovate')}</h3>
               <p className={styles.goalCardText}>{t('home.innovateText')}</p>
             </div>
-            <div className={styles.goalCard}>
+            {/* 6DC786 */}
+            <div
+              className={`${styles.goalCard} hover:!bg-[#6DC786] hover:bg-opacity-2`}
+            >
               <img
                 src={growup}
                 alt="Development & Improvement"
@@ -106,6 +129,7 @@ const Home = () => {
             </div>
           </div>
         </section>
+
         {/* Giải pháp nổi bật Section */}
         <ThreeDSlider />
 
@@ -114,7 +138,7 @@ const Home = () => {
           <h2 className={`${styles.sectionTitle} !text-3xl`}>
             {t('home.strategicPartners')}
           </h2>
-          <div className={styles.partnersGrid}>
+          <div className='flex justify-center mb-6 gap-4'>
             <div className={`${styles.partnerLogo} !w-40 !h-20`}>
               <img
                 src={palmcap}

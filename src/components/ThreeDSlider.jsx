@@ -53,7 +53,7 @@ const ThreeDSlider = () => {
 
   return (
     <div className="w-full py-10 bg-white">
-      <h2 className="text-center !text-3xl mb-10 text-gray-800">
+      <h2 className="text-start font-bold !text-3xl mb-10 text-gray-800">
         {t('home.featuredSolutions')}
       </h2>
 

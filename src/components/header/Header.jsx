@@ -23,7 +23,7 @@ export default function Header() {
       <header className="header">
         <div className="headerpalm">
           <div className="logo">
-            <img src={Logo} className="logopalmtek !w-30 !h-10" alt="Logo" />
+            <img src={Logo} className="logopalmtek !w-[140px] !h-[40px]" alt="Logo" />
           </div>
           <nav className="nav text-[22px]">
             <NavLink
