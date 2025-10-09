@@ -1,4 +1,5 @@
-import React, { useRef } from 'react';
+
+import React, { useState, useRef } from 'react';
 import styles from './About.module.css';
 import bannerImage from '../../assets/Img/bannerpage.png';
 import bgAbout from '../../assets/Img/bgabout.avif';
@@ -8,7 +9,7 @@ import { useTranslation } from 'react-i18next';
 const AboutPage = () => {
   const { t } = useTranslation();
   const milestonesRef = useRef([]);
-  const [activeYear, setActiveYear] = React.useState('2007');
+  const [activeYear, setActiveYear] = useState('2007');
 
   const years = [
     '2007',
@@ -24,18 +25,20 @@ const AboutPage = () => {
     '2025',
   ];
 
-  const handleYearClick = year => {
-    setActiveYear(year);
-    const index = years.indexOf(year);
-    if (milestonesRef.current[index]) {
-      milestonesRef.current[index].scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }
-  };
-
-  // Removed auto-scroll on mount to allow ScrollToTop to work
+const handleYearClick = year => {
+  setActiveYear(year);
+  const index = years.indexOf(year);
+  if (milestonesRef.current[index]) {
+    const element = milestonesRef.current[index];
+    const yOffset = 150; // Khoảng cách từ top của viewport (px)
+    const y = element.getBoundingClientRect().top + window.scrollY - yOffset;
+    
+    window.scrollTo({
+      top: y,
+      behavior: 'smooth'
+    });
+  }
+};
 
   return (
     <div
@@ -43,13 +46,13 @@ const AboutPage = () => {
       style={{ backgroundImage: `url(${bgAbout})` }}
     >
       <div
-        className={`${styles.banner} w-full`}
+        className={styles.banner}
         style={{ position: 'relative', textAlign: 'center' }}
       >
         <img
           src={bannerImage}
           alt="Banner"
-          style={{ width: '100%', height: '400px' }}
+          style={{ width: '100%' }}
         />
         <h1
           style={{
@@ -69,11 +72,8 @@ const AboutPage = () => {
 
       {/* Section 1 */}
       <section className={styles.section1}>
-        <div className={`${styles.contentWrapper}`}>
-          <div
-            className={`${styles.textContent} !w-[300px] xl:max-w-[800px] xxl:max-w-[800px]  mr-2 xl:mr-30 xxl:mr-30 !text-[676C6D] !text-lg xl:!text-2xl xxl:!text-3xl leading-[1.33] `}
-          >
-            {/* <h2>{t('about.aboutPalmtek')}</h2> */}
+        <div className={styles.contentWrapper}>
+          <div className={styles.textContent}>
             <p>{t('about.aboutText1')}</p>
             <p>{t('about.aboutText2')}</p>
             <p>{t('about.aboutText3')}</p>
@@ -81,7 +81,7 @@ const AboutPage = () => {
           <div className={styles.imageContent}>
             <img
               src={bannerAbout}
-              className="!h-[185px] !w-[300px] xl:!h-[385px] xl:!w-[663px] xxl:!h-[550px] xxl:!w-[900px]"
+              className={styles.image}
               alt="Technology"
             />
           </div>
@@ -90,20 +90,20 @@ const AboutPage = () => {
 
       {/* Section 2 */}
       <section className={styles.section2}>
-        <div className={`${styles.visionContent}`}>
-          <h2 className="!mb-0 font-medium tracking-normal">
+        <div className={styles.visionContent}>
+          <h2 className={styles.visionTitle}>
             {t('about.visionTitle')}
           </h2>
-          <p className=" text-center mx-auto">{t('about.visionText1')}</p>
-          <p>{t('about.visionText2')}</p>
+          <p className={styles.visionText}>{t('about.visionText1')}</p>
+          <p className={styles.visionText}>{t('about.visionText2')}</p>
         </div>
       </section>
 
       {/* Timeline Section */}
       <section className={styles.timelineSection}>
         <div className={styles.container}>
-          <h1 className={`${styles.timelineHeader} !font-bold`}>
-            {t('about.journeyTitle')} <span>PalmTek</span>
+          <h1 className={styles.timelineHeader}>
+            {t('about.journeyTitle')} <span className={styles.timelineHeaderHighlight}>PalmTek</span>
           </h1>
           <div className={styles.timelineWrapper}>
             {/* Left: Milestones */}
@@ -116,30 +116,27 @@ const AboutPage = () => {
                   <div
                     key={year}
                     ref={el => (milestonesRef.current[index] = el)}
-                    className={`${styles.milestone} gap-[10px] ${
-                      activeYear === year ? styles.active : ''
-                    }`}
+                    className={`${styles.milestone} ${activeYear === year ? styles.active : ''}`}
                     data-year={year}
                   >
+                    
                     <div
-                      className={`${styles.milestoneYear} ${
-                        activeYear === year ? styles.red : styles.gray
-                      }`}
+                      className={`${styles.milestoneYear} ${activeYear === year ? styles.red : styles.gray}`}
                     >
                       {year}
                     </div>
+                   
                     <div className={styles.milestoneContent}>
-                      <h2 className="mt-10 font-bold">{milestone.title}</h2>
+                      <h2 className={styles.milestoneTitle}>{milestone.title}</h2>
                       {Array.isArray(milestone.content) ? (
-                        milestone.content.map((p, i) => <p key={i}>{p}</p>)
+                        milestone.content.map((p, i) => <p key={i} className={styles.milestoneText}>{p}</p>)
                       ) : (
-                        <p>{milestone.content}</p>
+                        <p className={styles.milestoneText}>{milestone.content}</p>
                       )}
                     </div>
-                    {index < years.length - 1 && (
-                      <hr className={styles.milestoneSeparator} />
-                    )}
+               
                   </div>
+                  
                 );
               })}
             </div>
@@ -150,9 +147,7 @@ const AboutPage = () => {
               {years.map(year => (
                 <div
                   key={year}
-                  className={`${styles.yearMarker} ${
-                    activeYear === year ? styles.active : ''
-                  }`}
+                  className={`${styles.yearMarker} ${activeYear === year ? styles.active : ''}`}
                   data-year={year}
                   onClick={() => handleYearClick(year)}
                 >

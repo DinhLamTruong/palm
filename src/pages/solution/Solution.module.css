@@ -1,0 +1,231 @@
+    .container {
+    min-height: 100vh;
+    
+    }
+
+    .section {
+    margin: 3rem 0;
+    padding: 0 1.5rem;
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    }
+
+    .sectionTitle {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 2.5rem;
+    line-height: 1.2;
+    }
+
+    .sectionDescription {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    }
+
+    .productList {
+    list-style: disc;
+    list-style-position: inside;
+    margin-left: 2.5rem;
+    color: #4a5568;
+    font-size: 1.5rem;
+    }
+
+    .productList li {
+    margin-bottom: 0.25rem;
+    }
+
+    .banner {
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    }
+
+    .bannerOverlay {
+    position: absolute;
+    inset: 0;
+    background-color: #000;
+    opacity: 0.4;
+    }
+
+    .bannerTitle {
+    color: #fff;
+    font-size: 3.75rem;
+    font-weight: 500;
+    position: relative;
+    z-index: 10;
+    }
+
+    .scrollButtonLeft,
+    .scrollButtonRight {
+    position: absolute;
+    top: 57%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    background-color: #fff;
+    border-radius: 9999px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 0.75rem;
+    transition: background-color 0.2s;
+    }
+
+    .scrollButtonLeft:hover,
+    .scrollButtonRight:hover {
+    background-color: #f7fafc;
+    }
+
+    .scrollButtonLeft {
+    left: -0.75rem;
+    }
+
+    .scrollButtonRight {
+    right: -1rem;
+    }
+
+    .icon {
+    font-size: 1.25rem;
+    }
+
+    .solutionsContainer {
+    display: flex;
+    gap: 1rem;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    }
+
+    .solutionsContainer::-webkit-scrollbar {
+    display: none;
+    }
+
+    .solutionCard {
+    min-width: 15rem;
+    height: 22.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    flex-shrink: 0;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.7s;
+    }
+
+    .solutionCard.expanded {
+    transform: scale(1.1);
+    z-index: 10;
+    }
+
+    .solutionImage {
+    width: 100%;
+    height: 22.5rem;
+    object-fit: cover;
+    filter: brightness(75%);
+    transition: filter 0.3s;
+    }
+
+    .solutionCard:hover .solutionImage {
+    filter: brightness(50%);
+    }
+
+    .solutionTitle {
+    position: absolute;
+    left: 1rem;
+    bottom: 1rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: all 0.7s;
+    }
+
+    .solutionCard:hover .solutionTitle {
+    transform: translateY(-17.5rem);
+    z-index: 100;
+    }
+
+    .solutionOverlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    transform: translateY(1rem);
+    transition: all 0.7s;
+    }
+
+    .solutionCard:hover .solutionOverlay,
+    .solutionOverlay.overlayVisible {
+    opacity: 1;
+    transform: translateY(0);
+    }
+
+    .solutionDescription {
+    margin-top: 5rem;
+    max-height: 15rem;
+    overflow-y: auto;
+    color: #fff;
+    font-size: 1rem;
+    padding-right: 0.5rem;
+    transform: translateY(1.5rem);
+    opacity: 0;
+    transition: all 0.5s;
+    }
+
+    .solutionCard:hover .solutionDescription {
+    transform: translateY(0);
+    opacity: 1;
+    }
+
+    .solutionDescription p {
+    white-space: pre-line;
+    line-height: 1.5;
+    }
+
+    .partnersContainer {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+    overflow-x: auto;
+    }
+
+    .partnersContainer::-webkit-scrollbar {
+    display: none;
+    }
+
+    .partnerLogo {
+    min-width: 3.125rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .logoImage {
+    object-fit: contain;
+    }
+
+    .clientsGrid {
+    background-color: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    color: #4a5568;
+    font-size: 1.125rem;
+    font-weight: 500;
+    }
+
+    .clientList {
+    margin: 0;
+    }
+
+    .clientList li {
+    margin-bottom: 0.25rem;
+    }
+

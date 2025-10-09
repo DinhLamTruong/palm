@@ -1,0 +1,301 @@
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+.headerPalm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.logo {
+  z-index: 1002;
+}
+
+.logoPalmtek {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.nav a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav a.active {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+.nav a:hover {
+  color: #d32f2f;
+}
+
+.flag {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  z-index: 1002;
+}
+
+.flagIcon {
+  width: 38px;
+  height: 28px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.flagIcon:hover {
+  transform: scale(1.1);
+}
+
+.languageButton {
+  background: transparent;
+  border: none;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  color: #000000;
+  transition: color 0.3s ease;
+}
+
+.languageButton:hover {
+  color: #d32f2f;
+}
+
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1002;
+  position: relative;
+}
+
+.hamburgerIcon {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #000000;
+  position: relative;
+  transition: background 0.3s ease;
+}
+
+.hamburgerIcon::before,
+.hamburgerIcon::after {
+  content: '';
+  display: block;
+  width: 24px;
+  height: 3px;
+  background: #000000;
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+.hamburgerIcon::before {
+  top: -8px;
+}
+
+.hamburgerIcon::after {
+  top: 8px;
+}
+
+.hamburger.open .hamburgerIcon {
+  background: transparent;
+}
+
+.hamburger.open .hamburgerIcon::before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+.hamburger.open .hamburgerIcon::after {
+  transform: rotate(-45deg);
+  top: 0;
+}
+
+/* Large Desktop (1440px - 1600px) */
+@media (max-width: 1600px) {
+  .headerPalm {
+    max-width: 1400px;
+    width: 92%;
+  }
+
+  .logoPalmtek {
+    height: 45px;
+  }
+
+  .nav {
+    font-size: 20px;
+    gap: 25px;
+  }
+
+  .flagIcon {
+    width: 36px;
+    height: 26px;
+  }
+
+  .languageButton {
+    font-size: 15px;
+  }
+}
+
+/* Medium Desktop (1200px - 1439px) */
+@media (max-width: 1439px) {
+  .headerPalm {
+    max-width: 1200px;
+    width: 94%;
+  }
+
+  .logoPalmtek {
+    height: 42px;
+  }
+
+  .nav {
+    font-size: 18px;
+    gap: 20px;
+  }
+
+  .flagIcon {
+    width: 34px;
+    height: 24px;
+  }
+
+  .languageButton {
+    font-size: 14px;
+  }
+}
+
+/* Tablet (768px - 1199px) */
+@media (max-width: 1199px) {
+  .headerPalm {
+    width: 95%;
+    padding: 0 10px;
+  }
+
+  .logoPalmtek {
+    height: 40px;
+  }
+
+  .nav {
+    font-size: 16px;
+    gap: 18px;
+  }
+
+  .flagIcon {
+    width: 32px;
+    height: 22px;
+  }
+
+  .languageButton {
+    font-size: 13px;
+  }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 767px) {
+  .header {
+    padding: 10px 0;
+  }
+
+  .headerPalm {
+    width: 100%;
+    padding: 0 15px;
+  }
+
+  .logoPalmtek {
+    height: 35px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    padding: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease, padding 0.3s ease;
+  }
+
+  .navOpen {
+    max-height: 400px;
+    opacity: 1;
+    padding: 20px 0;
+  }
+
+  .nav a {
+    font-size: 16px;
+    padding: 12px 20px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav a:last-child {
+    border-bottom: none;
+  }
+
+  .flag {
+    gap: 8px;
+  }
+
+  .flagIcon {
+    width: 28px;
+    height: 20px;
+  }
+
+  .languageButton {
+    font-size: 13px;
+  }
+}
+
+/* Small Mobile (below 480px) */
+@media (max-width: 480px) {
+  .logoPalmtek {
+    height: 30px;
+  }
+
+  .flagIcon {
+    width: 24px;
+    height: 18px;
+  }
+
+  .languageButton {
+    font-size: 12px;
+  }
+}

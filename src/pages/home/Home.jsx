@@ -20,150 +20,147 @@ const Home = () => {
 
   return (
     <>
-      <div className={`${styles.banner} relative overflow-x-hidden`}>
+      {/* Banner Section */}
+      <div className={`${styles.banner} ${styles.relative} ${styles.overflowXHidden}`}>
         <img
           src={bannerImage}
-          alt=""
-          className={`${styles.bannerImg} w-full object-cover !h-[380px]`}
+          alt={t('home.bannerAlt')}
+          className={`${styles.bannerImg} ${styles.widthFull} ${styles.objectCover} ${styles.height380}`}
         />
-        <NavLink to="/about" className={`${styles.contactButton}`}>
+        <NavLink to="/about" className={styles.contactButton}>
           <button className={styles.bannerButton}>
             {t('home.discoverNow')}
           </button>
         </NavLink>
-        <span className="flex flex-col absolute left-12 xl:left-36 xxl:left-36 top-1/2 -translate-y-1/2 z-10 cursor-pointer text-2xl xxl:text-4xl xxl:text-5xl text-white shadow p-3 font-medium leading-[1.45]">
+        <span
+          className={`${styles.flex} ${styles.flexCol} ${styles.absolute} ${styles.left12} ${styles.xlLeft36} ${styles.xxlLeft36} ${styles.topHalf} ${styles.translateYNeg50} ${styles.z10} ${styles.cursorPointer} ${styles.text2xl} ${styles.xxlText4xl} ${styles.textWhite} ${styles.shadow} ${styles.p3} ${styles.fontMedium} ${styles.leading145}`}
+        >
           <p>{t('home.bannerLine1')}</p>
           <p>{t('home.bannerLine2')}</p>
         </span>
       </div>
+
+      {/* Since 2007 Section */}
       <div className={styles.containerSince}>
-        <div className={`${styles.card} !h-160`}>
+        <div className={`${styles.card} ${styles.height160}`}>
           <div className={styles.cardContent}>
             <h2
-              className={`${styles.cardText} !text-[18px] xl:!text-[30px] xxl:!text-[30px] `}
+              className={`${styles.cardText} ${styles.text18} ${styles.xlText30} ${styles.xxlText30}`}
             >
               {t('home.established2007')}
             </h2>
             <p
-              className={`${styles.cardText} !text-[18px] xl:!text-[30px] xxl:!text-[30px]`}
+              className={`${styles.cardText} ${styles.text18} ${styles.xlText30} ${styles.xxlText30}`}
             >
               {t('home.aboutText1')}
             </p>
             <p
-              className={`${styles.cardText} !text-[18px] xl:!text-[30px] xxl:!text-[30px]`}
+              className={`${styles.cardText} ${styles.text18} ${styles.xlText30} ${styles.xxlText30}`}
             >
               {t('home.aboutText2')}
             </p>
-            <div className="flex justify-center mt-6">
+            <div className={`${styles.flex} ${styles.justifyCenter} ${styles.mt6}`}>
               <NavLink
                 to="/about"
-                className="inline-flex items-center w-[195px] h-[40px] px-5 py-1.5 border-2 border-red-600 text-red-600 font-bold rounded-full uppercase tracking-wider hover:bg-red-600 hover:text-white transition-all"
+                className={`${styles.inlineFlex} ${styles.itemsCenter} ${styles.w195} ${styles.h40} ${styles.px5} ${styles.py1_5} ${styles.border2} ${styles.borderRed600} ${styles.textRed600} ${styles.fontBold} ${styles.roundedFull} ${styles.uppercase} ${styles.trackingWider} ${styles.hoverBgRed600} ${styles.hoverTextWhite} ${styles.transitionAll}`}
                 aria-label={t('home.aboutUs')}
               >
-                <span className="flex-1 text-[12px] xl:text-[16px] xxl:text-[16px]">{t('home.aboutUs')}</span>
-                <img src={icons_arrow_left}/>
+                <span
+                  className={`${styles.flex1} ${styles.text12} ${styles.xlText16} ${styles.xxlText16}`}
+                >
+                  {t('home.aboutUs')}
+                </span>
+                <img src={icons_arrow_left} alt={t('home.arrowLeftAlt')} />
               </NavLink>
             </div>
           </div>
-          <div className={`${styles.cardImage} ml-0 md:ml-20 lg:ml-20 xl:ml-20 xxl:ml-20`}>
+          <div
+            className={`${styles.cardImage} ${styles.ml0} ${styles.mdMl20} ${styles.lgMl20} ${styles.xlMl20} ${styles.xxlMl20}`}
+          >
             <img
               src={since2007}
-              alt="Hình ảnh mạng lưới công nghệ"
-              className={`${styles.cardImageImg} !h-[300px] xl:!h-[400px] xx;!h-[400px] max-w-ful mt-14`}
+              alt={t('home.since2007Alt')}
+              className={`${styles.cardImageImg} ${styles.height300} ${styles.xlHeight400} ${styles.xxlHeight400} ${styles.maxWidthFull} ${styles.mt14}`}
             />
           </div>
         </div>
       </div>
+
+      {/* Goals Section */}
       <div className={styles.container}>
-        {/* Mục tiêu & Tầm nhìn Section */}
         <section className={styles.section} id="goals">
           <h2
-            className={`${styles.sectionTitle} !text-3xl flex justify-start font-bold`}
+            className={`${styles.sectionTitle} ${styles.text3xl} ${styles.flex} ${styles.justifyStart} ${styles.fontBold}`}
           >
             {t('home.goalsVision')}
           </h2>
           <div className={styles.goalsGrid}>
-            {/* FF0000 */}
-            <div
-              className={`${styles.goalCard} hover:!bg-[#FF0061] hover:bg-opacity-2`}
-            >
+            <div className={`${styles.goalCard} ${styles.hoverBgFF0061}`}>
               <img
                 src={communityservice}
-                alt="Community Services"
+                alt={t('home.communityServiceAlt')}
                 className={styles.goalCardImg}
               />
-              <h3 className={`${styles.goalCardTitle} `}>
-                {t('home.serveCommunity')}
-              </h3>
-              <p className={`${styles.goalCardText} `}>
-                {t('home.serveCommunityText')}
-              </p>
+              <h3 className={styles.goalCardTitle}>{t('home.serveCommunity')}</h3>
+              <p className={styles.goalCardText}>{t('home.serveCommunityText')}</p>
             </div>
-            {/* hover:bg-gradient-to-r hover:from-[#4FC3F7] hover:to-[#29B6F6] transition-all duration-300 p-4 rounded-lg */}
             <div
-              className={`${styles.goalCard} hover:!bg-gradient-to-r hover:!from-[#4FC3F7] hover:!to-[#29B6F6] transition-all duration-300 p-4 rounded-lg`}
+              className={`${styles.goalCard} ${styles.hoverGradient4FC3F7to29B6F6} ${styles.transitionAll300} ${styles.p4} ${styles.roundedLg}`}
             >
               <img
                 src={idea}
-                alt="Creating New Ideas"
-                className={`${styles.goalCardImg} pointer-events-none`}
+                alt={t('home.ideaAlt')}
+                className={`${styles.goalCardImg} ${styles.pointerEventsNone}`}
               />
               <h3 className={styles.goalCardTitle}>{t('home.innovate')}</h3>
               <p className={styles.goalCardText}>{t('home.innovateText')}</p>
             </div>
-            {/* 6DC786 */}
-            <div
-              className={`${styles.goalCard} hover:!bg-[#6DC786] hover:bg-opacity-2`}
-            >
+            <div className={`${styles.goalCard} ${styles.hoverBg6DC786}`}>
               <img
                 src={growup}
-                alt="Development & Improvement"
+                alt={t('home.growUpAlt')}
                 className={styles.goalCardImg}
               />
-              <h3 className={styles.goalCardTitle}>
-                {t('home.sustainableDevelopment')}
-              </h3>
-              <p className={styles.goalCardText}>
-                {t('home.sustainableDevelopmentText')}
-              </p>
+              <h3 className={styles.goalCardTitle}>{t('home.sustainableDevelopment')}</h3>
+              <p className={styles.goalCardText}>{t('home.sustainableDevelopmentText')}</p>
             </div>
           </div>
         </section>
 
-        {/* Giải pháp nổi bật Section */}
+        {/* ThreeDSlider Component */}
         <ThreeDSlider />
 
-        {/* Đối tác chiến lược Section */}
-        <section className={`${styles.section} mt-12`} id="partners">
-          <h2 className={`${styles.sectionTitle} !text-3xl`}>
+        {/* Partners Section */}
+        <section className={`${styles.section} ${styles.mt12}`} id="partners">
+          <h2 className={`${styles.sectionTitle} ${styles.text3xl}`}>
             {t('home.strategicPartners')}
           </h2>
-          <div className='flex justify-center mb-6 gap-4'>
-            <div className={`${styles.partnerLogo} !w-40 !h-20`}>
+          <div className={`${styles.flex} ${styles.justifyCenter} ${styles.mb6} ${styles.gap4}`}>
+            <div className={`${styles.partnerLogo} ${styles.w40} ${styles.h20}`}>
               <img
                 src={palmcap}
-                alt="Palms Capital"
+                alt={t('home.palmcapAlt')}
                 className={styles.partnerLogoImg}
               />
             </div>
-            <div className={`${styles.partnerLogo} !w-40 !h-20`}>
+            <div className={`${styles.partnerLogo} ${styles.w40} ${styles.h20}`}>
               <img
                 src={mobile}
-                alt="Mobifone"
+                alt={t('home.mobifoneAlt')}
                 className={styles.partnerLogoImg}
               />
             </div>
-            <div className={`${styles.partnerLogo} !w-40 !h-20`}>
+            <div className={`${styles.partnerLogo} ${styles.w40} ${styles.h20}`}>
               <img
                 src={logo_gtel}
-                alt="Viettel"
+                alt={t('home.viettelAlt')}
                 className={styles.partnerLogoImg}
               />
             </div>
-            <div className={`${styles.partnerLogo} !w-40 !h-20`}>
+            <div className={`${styles.partnerLogo} ${styles.w40} ${styles.h20}`}>
               <img
                 src={bocauservice}
-                alt="Techcombank"
+                alt={t('home.techcombankAlt')}
                 className={styles.partnerLogoImg}
               />
             </div>

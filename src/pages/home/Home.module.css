@@ -1,27 +1,124 @@
+/* Base styles (apply to all screen sizes) */
 .banner {
   width: 100%;
   height: auto;
   margin-top: 80px;
   display: flex;
+  position: relative;
 }
 
 .bannerImg {
   width: 100%;
   height: auto;
+  object-fit: cover;
 }
 
-/* Since section */
+.widthFull {
+  width: 100%;
+}
+
+.objectCover {
+  object-fit: cover;
+}
+
+.height380 {
+  height: 760px; /* Default for laptops */
+}
+
+.relative {
+  position: relative;
+}
+
+.overflowXHidden {
+  overflow-x: hidden;
+}
+
+.flex {
+  display: flex;
+}
+
+.flexCol {
+  flex-direction: column;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.left12 {
+  left: 3rem; /* Default for laptops */
+}
+
+.xlLeft36 {
+  left: 9rem; /* Default for large screens */
+}
+
+.xxlLeft36 {
+  left: 9rem;
+}
+
+.topHalf {
+  top: 50%;
+}
+
+.translateYNeg50 {
+  transform: translateY(-50%);
+}
+
+.z10 {
+  z-index: 10;
+}
+
+.cursorPointer {
+  cursor: pointer;
+}
+
+.text2xl {
+  font-size: 1.5rem; /* Default for laptops */
+}
+
+.xxlText4xl {
+  font-size: 2.25rem;
+}
+
+.textWhite {
+  color: #ffffff;
+}
+
+.shadow {
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.p3 {
+  padding: 0.75rem;
+}
+
+.fontMedium {
+  font-weight: 500;
+}
+
+.leading145 {
+  line-height: 1.45;
+}
+
 .containerSince {
-  /* max-width: 1400px; */
   margin: 0 auto;
-  /* padding: 20px; */
+  width: 90%;
+  max-width: 1600px; /* Constrain max width */
 }
 
 .card {
   display: flex;
   align-items: center;
   overflow: hidden;
-  height: 300px; /* Chiều cao cố định để cân đối */
+  height: auto; /* Flexible height */
+}
+
+.height160 {
+  width: 100%;
+  max-width: 1600px;
+  height: auto;
+  margin: 0 auto;
 }
 
 .cardContent {
@@ -29,35 +126,23 @@
   padding: 20px;
 }
 
-.cardTitle {
-  font-size: 2em;
-  font-weight: bold;
-  color: #d32f2f;
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-
 .cardText {
-  font-size: 1em;
+  font-size: 1rem;
   line-height: 1.6;
-  color: #333;
+  color: #333333;
   margin-bottom: 15px;
 }
 
-.cardButton {
-  background-color: white;
-  color: #b71c1c;
-  border: 1px solid #b71c1c;
-  padding: 12px 24px;
-  border-radius: 5px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background 0.3s;
+.text18 {
+  font-size: 1.125rem;
 }
 
-.cardButton:hover {
-  background-color: #b71c1c;
-  color: white;
+.xlText30 {
+  font-size: 25px;
+}
+
+.xxlText30 {
+  font-size: 25px;
 }
 
 .cardImage {
@@ -65,33 +150,84 @@
   height: 100%;
 }
 
+.ml0 {
+  margin-left: 0;
+}
+
+.mdMl20 {
+  margin-left: 5rem;
+}
+
+.lgMl20 {
+  margin-left: 5rem;
+}
+
+.xlMl20 {
+  margin-left: 5rem;
+}
+
+.xxlMl20 {
+  margin-left: 5rem;
+}
+
 .cardImageImg {
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 }
 
-/* Main content container */
+.height300 {
+  height: 300px;
+}
+
+.xlHeight400 {
+  height: 400px;
+}
+
+.xxlHeight400 {
+  height: 400px;
+}
+
+.maxWidthFull {
+  max-width: 100%;
+}
+
+.mt14 {
+  margin-top: 3.5rem;
+}
+
 .container {
   width: 90%;
-  /* max-width: 1290px; */
   margin: 0 auto;
   padding: 40px 0;
 }
 
-/* Section styles */
 .section {
-  margin-bottom: 60px;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1600px;
 }
 
 .sectionTitle {
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #333;
+  color: #333333;
 }
 
-/* Goals & Vision section */
+.text3xl {
+  font-size: 1.875rem;
+  font-weight: bold;
+}
+
+.justifyStart {
+  justify-content: flex-start;
+}
+
+.fontBold {
+  font-weight: 700;
+}
+
 .goalsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -99,19 +235,45 @@
 }
 
 .goalCard {
-  flex-direction: column;
   display: flex;
+  flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 30px 20px;
-  border: 1px solid #ddd;
+  border: 1px solid #dddddd;
   border-radius: 10px;
-  background: #fff;
+  background: #ffffff;
   transition: transform 0.3s ease;
 }
 
 .goalCard:hover {
   transform: translateY(-5px);
+}
+
+.hoverBgFF0061:hover {
+  background-color: #ff0061;
+  background-opacity: 0.2;
+}
+
+.hoverGradient4FC3F7to29B6F6:hover {
+  background: linear-gradient(to right, #4fc3f7, #29b6f6);
+}
+
+.transitionAll300 {
+  transition: all 300ms ease;
+}
+
+.p4 {
+  padding: 1rem;
+}
+
+.roundedLg {
+  border-radius: 0.5rem;
+}
+
+.hoverBg6DC786:hover {
+  background-color: #6dc786;
+  background-opacity: 0.2;
 }
 
 .goalCardImg {
@@ -120,8 +282,12 @@
   margin-bottom: 20px;
 }
 
+.pointerEventsNone {
+  pointer-events: none;
+}
+
 .goalCardTitle {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   margin-bottom: 15px;
   color: #333333;
   font-weight: 700;
@@ -131,12 +297,166 @@
   color: #666666;
   line-height: 1.6;
 }
-.goalCard:hover h3,
-.goalCard:hover p {
-  color: white !important;
+
+.goalCard:hover .goalCardTitle,
+.goalCard:hover .goalCardText {
+  color: #ffffff !important;
 }
 
-/* Solutions section - Horizontal scroll with center scale effect */
+.mt12 {
+  margin-top: 3rem;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.mb6 {
+  margin-bottom: 1.5rem;
+}
+
+.gap4 {
+  gap: 1rem;
+}
+
+.partnerLogo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  background: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.w40 {
+  width: 400px;
+}
+
+.partnerLogo:hover {
+  transform: translateY(-5px);
+}
+
+.partnerLogoImg {
+  height: auto;
+  max-height: 80px;
+}
+
+.bannerButton {
+  position: absolute;
+  left: 10%;
+  bottom: 10%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  color: #b71c1c;
+  border: none;
+  padding: 12px 60px;
+  border-radius: 20px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease, color 0.3s ease;
+  z-index: 10;
+}
+
+.bannerButton:hover {
+  background-color: #b71c1c;
+  color: #ffffff;
+}
+
+.contactButton {
+  display: inline-block;
+}
+
+.inlineFlex {
+  display: inline-flex;
+}
+
+.itemsCenter {
+  align-items: center;
+}
+
+.w195 {
+  width: 195px;
+}
+
+.h40 {
+  height: 40px;
+}
+
+.px5 {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+
+.py1_5 {
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem;
+}
+
+.border2 {
+  border-width: 2px;
+}
+
+.borderRed600 {
+  border-color: #dc2626;
+}
+
+.textRed600 {
+  color: #dc2626;
+}
+
+.fontBold {
+  font-weight: 700;
+}
+
+.roundedFull {
+  border-radius: 9999px;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.trackingWider {
+  letter-spacing: 0.05em;
+}
+
+.hoverBgRed600:hover {
+  background-color: #dc2626;
+}
+
+.hoverTextWhite:hover {
+  color: #ffffff;
+}
+
+.transitionAll {
+  transition: all 0.3s ease;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.text12 {
+  font-size: 0.75rem;
+}
+
+.xlText16 {
+  font-size: 1rem;
+}
+
+.xxlText16 {
+  font-size: 1rem;
+}
+
+.mt6 {
+  margin-top: 1.5rem;
+}
+
+/* Solutions section (unchanged) */
 .solutionsSection {
   position: relative;
   overflow: hidden;
@@ -203,11 +523,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: linear-gradient(
-    to bottom,
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0.8)
-  );
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8));
   z-index: 2;
 }
 
@@ -242,7 +558,6 @@
   font-weight: 400;
 }
 
-/* Center card styles */
 .solutionCard.center {
   flex: 0 0 420px !important;
   width: 420px !important;
@@ -272,7 +587,6 @@
   font-weight: 500;
 }
 
-/* Side clipping effect - gradient overlays */
 .solutionsSection::before,
 .solutionsSection::after {
   content: '';
@@ -294,7 +608,6 @@
   background: linear-gradient(to left, white, transparent);
 }
 
-/* Navigation buttons */
 .navBtn {
   position: absolute;
   top: 50%;
@@ -325,70 +638,307 @@
   right: 20px;
 }
 
-/* Partners section */
-.partnersGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  gap: 40px;
-  text-align: center;
-  margin: 0 200px;
-  /* grid-auto-rows: minmax(80px, auto); */
-}
-
-.partnerLogo {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  background: #fff;
-  transition: transform 0.3s ease;
-}
-
-.partnerLogo:hover {
-  transform: translateY(-5px);
-}
-
-.partnerLogoImg {
-  height: auto;
-  max-height: 80px;
-}
-
-/* Banner button styles */
-.bannerButton {
-  position: absolute;
-  left: 10%;
-  bottom: 10%;
-  transform: translateY(-50%);
-  background-color: white;
-  color: #b71c1c;
-  border: none;
-  padding: 12px 60px;
-  border-radius: 20px;
-  font-size: 1.1em;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s ease, color 0.3s ease;
-  z-index: 10;
-}
-
-.bannerButton:hover {
-  background-color: #b71c1c;
-  color: white;
-}
-
 .swiper-slide {
   transition: transform 0.6s ease, opacity 0.6s ease;
 }
+
 .swiper-slide-prev,
 .swiper-slide-next {
   opacity: 0.6;
   transform: scale(0.85) translateY(20px);
 }
+
 .swiper-slide-active {
   transform: scale(1.05) translateY(-20px);
   opacity: 1;
   z-index: 10;
+}
+
+/* Tablet (768px - 1023px) */
+@media (max-width: 1023px) {
+  .banner {
+    margin-top: 60px; /* Reduce top margin */
+  }
+
+  .height380 {
+    height: 500px; /* Smaller banner height */
+  }
+
+  .left12,
+  .xlLeft36,
+  .xxlLeft36 {
+    left: 2rem; /* Reduce left positioning */
+  }
+
+  .text2xl,
+  .xxlText4xl {
+    font-size: 1.25rem; /* Smaller font size */
+  }
+
+  .containerSince {
+    width: 95%;
+  }
+
+  .height160 {
+    width: 100%;
+    height: auto;
+    flex-direction: column; /* Stack content vertically */
+  }
+
+  .card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .cardContent {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .cardImage {
+    margin-left: 0;
+  }
+
+  .mdMl20,
+  .lgMl20,
+  .xlMl20,
+  .xxlMl20 {
+    margin-left: 0;
+  }
+
+  .cardImageImg {
+    height: 250px;
+  }
+
+  .xlHeight400,
+  .xxlHeight400 {
+    height: 300px;
+  }
+
+  .section {
+    width: 95%;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .text3xl {
+    font-size: 1.5rem;
+  }
+
+  .goalsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+
+  .goalCard {
+    padding: 20px 15px;
+  }
+
+  .goalCardTitle {
+    font-size: 1.25rem;
+  }
+
+  .w40 {
+    width: 200px; /* Smaller partner logos */
+  }
+
+  .partnerLogoImg {
+    max-height: 60px;
+  }
+
+  .bannerButton {
+    padding: 10px 40px;
+    font-size: 1rem;
+    left: 5%;
+  }
+
+  .solutionsSection {
+    padding: 0 30px;
+  }
+
+  .solutionCard {
+    flex: 0 0 280px;
+    width: 280px;
+    height: 280px;
+  }
+
+  .solutionCard.center {
+    flex: 0 0 360px !important;
+    width: 360px !important;
+    height: 360px !important;
+  }
+
+  .solutionCard.center .solutionCardTitle {
+    font-size: 1.6em;
+  }
+
+  .solutionCard.center .solutionCardText {
+    font-size: 0.9em;
+  }
+}
+
+/* Mobile (below 768px) */
+@media (max-width: 767px) {
+  .banner {
+    margin-top: 40px;
+  }
+
+  .height380 {
+    height: 300px; /* Smaller banner height */
+  }
+
+  .left12,
+  .xlLeft36,
+  .xxlLeft36 {
+    left: 1rem;
+  }
+
+  .text2xl,
+  .xxlText4xl {
+    font-size: 1rem; /* Smaller font size */
+  }
+
+  .p3 {
+    padding: 0.5rem;
+  }
+
+  .containerSince {
+    width: 100%;
+  }
+
+  .height160 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .cardContent {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .cardText,
+  .text18,
+  .xlText30,
+  .xxlText30 {
+    font-size: 0.9rem;
+  }
+
+  .cardImageImg {
+    height: 200px;
+  }
+
+  .xlHeight400,
+  .xxlHeight400 {
+    height: 200px;
+  }
+
+  .mt14 {
+    margin-top: 2rem;
+  }
+
+  .container {
+    padding: 20px 0;
+  }
+
+  .section {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .sectionTitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+
+  .text3xl {
+    font-size: 1.25rem;
+  }
+
+  .goalsGrid {
+    grid-template-columns: 1fr; /* Single column */
+    gap: 15px;
+  }
+
+  .goalCard {
+    padding: 15px 10px;
+  }
+
+  .goalCardTitle {
+    font-size: 1.1rem;
+  }
+
+  .goalCardText {
+    font-size: 0.9rem;
+  }
+
+  .w40 {
+    width: 150px; /* Smaller partner logos */
+  }
+
+  .partnerLogo {
+    padding: 10px;
+  }
+
+  .partnerLogoImg {
+    max-height: 50px;
+  }
+
+  .bannerButton {
+    padding: 8px 30px;
+    font-size: 0.9rem;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); /* Center horizontally */
+    bottom: 5%;
+  }
+
+  .solutionsSection {
+    padding: 0 10px;
+  }
+
+  .solutionsWrapper {
+    gap: 15px;
+  }
+
+  .solutionCard {
+    flex: 0 0 250px;
+    width: 250px;
+    height: 250px;
+  }
+
+  .solutionCard.center {
+    flex: 0 0 300px !important;
+    width: 300px !important;
+    height: 300px !important;
+  }
+
+  .solutionCard.center .solutionCardTitle {
+    font-size: 1.4em;
+    bottom: 70px;
+  }
+
+  .solutionCard.center .solutionCardText {
+    font-size: 0.8em;
+    bottom: 30px;
+  }
+
+  .solutionsSection::before,
+  .solutionsSection::after {
+    width: 50px; /* Smaller gradient overlays */
+  }
+
+  .navBtn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .navBtnPrev {
+    left: 10px;
+  }
+
+  .navBtnNext {
+    right: 10px;
+  }
 }
