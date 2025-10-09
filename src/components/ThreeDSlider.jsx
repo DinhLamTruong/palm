@@ -10,7 +10,7 @@ import styles from './ThreeDSlider.module.css';
 import Lake from '../assets/Img/V-Lake.jpg';
 import Transform from '../assets/Img/V-Transform.jpg';
 import Lang from '../assets/Img/V-Lang.jpg';
-import Lab from '../assets/Img/V-Lab.jpg';
+import Lab from '../assets/Img/V-lab.jpg';
 import Azur from '../assets/Img/V-Azur.jpg';
 
 const ThreeDSlider = () => {
