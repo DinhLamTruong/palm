@@ -11,12 +11,12 @@ export default function Footer() {
   };
   return (
     <>
-      <footer className="footer !text-gray-700">
+      <footer className="footer !text-gray-700 ">
         <div className="footerContent">
           <div className="footerLeft">
             <div className="logo !w-[300px]">
               <div className="logoIcon">
-                <img className="logofooter !w-[140px] !h-[40px]" src={Logo} alt="" />
+                <img className="logofooter  !h-[40px]" src={Logo} alt="" />
               </div>
             </div>
             <div className="companyInfo !w-[386px]">

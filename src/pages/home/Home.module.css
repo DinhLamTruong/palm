@@ -2,7 +2,7 @@
 .banner {
   width: 100%;
   height: auto;
-  margin-top: 80px;
+  margin-top: 80px  ;
   display: flex;
   position: relative;
 }
@@ -19,10 +19,6 @@
 
 .objectCover {
   object-fit: cover;
-}
-
-.height380 {
-  height: 760px; /* Default for laptops */
 }
 
 .relative {
@@ -102,14 +98,15 @@
 }
 
 .containerSince {
-  margin: 0 auto;
+  margin: 50px auto;
   width: 90%;
   max-width: 1600px; /* Constrain max width */
 }
 
 .card {
+ 
   display: flex;
-  align-items: center;
+ 
   overflow: hidden;
   height: auto; /* Flexible height */
 }
@@ -140,7 +137,10 @@
 .xlText30 {
   font-size: 25px;
 }
-
+.cardContent > h2 {
+  color:#b71c1c;
+  font-weight: bold;
+}
 .xxlText30 {
   font-size: 25px;
 }
@@ -167,6 +167,7 @@
 }
 
 .xxlMl20 {
+  padding:20px;
   margin-left: 5rem;
 }
 
@@ -192,9 +193,7 @@
   max-width: 100%;
 }
 
-.mt14 {
-  margin-top: 3.5rem;
-}
+
 
 .container {
   width: 90%;
@@ -209,7 +208,7 @@
 }
 
 .sectionTitle {
-  text-align: center;
+
   font-size: 2.5rem;
   margin-bottom: 40px;
   color: #333333;
@@ -232,6 +231,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
+  justify-items: center; /* Centers items horizontally */
 }
 
 .goalCard {
@@ -340,7 +340,7 @@
 
 .partnerLogoImg {
   height: auto;
-  max-height: 80px;
+  max-height: 60px;
 }
 
 .bannerButton {
@@ -406,10 +406,6 @@
 
 .textRed600 {
   color: #dc2626;
-}
-
-.fontBold {
-  font-weight: 700;
 }
 
 .roundedFull {
@@ -730,6 +726,7 @@
   .goalsGrid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 20px;
+    justify-items: center; /* Ensure centering on tablet */
   }
 
   .goalCard {
@@ -859,6 +856,7 @@
   .goalsGrid {
     grid-template-columns: 1fr; /* Single column */
     gap: 15px;
+    justify-items: center; /* Center the single column */
   }
 
   .goalCard {

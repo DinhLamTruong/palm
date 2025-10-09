@@ -56,7 +56,6 @@
 .textContent {
   flex: 1;
   min-width: 0;
-  color: #676C6D;
   font-size: 24px;
   line-height: 1.6;
 }
@@ -113,7 +112,7 @@
 }
 
 .visionTitle {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
@@ -121,7 +120,7 @@
 }
 
 .visionText {
-  font-size: 1.2rem;
+  font-size: 24px;
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto 20px;
@@ -166,6 +165,7 @@
 }
 
 .milestone {
+  max-width: 90%;
   min-height: 240px;
   display: flex;
   gap: 60px;
@@ -328,11 +328,11 @@
   }
 
   .visionTitle {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .visionText {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 
   .timelineHeader {
@@ -389,11 +389,11 @@
   }
 
   .visionTitle {
-    font-size: 1.75rem;
+    font-size: 1.7rem;
   }
 
   .visionText {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .timelineSection {
@@ -474,12 +474,12 @@
   }
 
   .visionTitle {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     margin-bottom: 20px;
   }
 
   .visionText {
-    font-size: 0.95rem;
+    font-size: 1rem;
     line-height: 1.6;
   }
 
@@ -604,11 +604,11 @@
   }
 
   .visionTitle {
-    font-size: 1.25rem;
+    font-size: 1.10rem;
   }
 
   .visionText {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .timelineHeader {
