@@ -98,7 +98,7 @@
 }
 
 .containerSince {
-  margin: 50px auto;
+  margin: 70px auto;
   width: 90%;
   max-width: 1600px; /* Constrain max width */
 }
@@ -130,19 +130,45 @@
   margin-bottom: 15px;
 }
 
-.text18 {
-  font-size: 1.125rem;
+.text17 {
+  font-size: 17px;
 }
 
-.xlText30 {
-  font-size: 25px;
+.text20 {
+  font-size: 20px;
 }
+
+.text15 {
+  font-size: 15px;
+}
+
+.xlText17 {
+  font-size: 17px;
+}
+
+.xlText20 {
+  font-size: 20px;
+}
+
+.xlText15 {
+  font-size: 15px;
+}
+
+.xxlText17 {
+  font-size: 17px;
+}
+
+.xxlText20 {
+  font-size: 20px;
+}
+
+.xxlText15 {
+  font-size: 15px;
+}
+
 .cardContent > h2 {
   color:#b71c1c;
   font-weight: bold;
-}
-.xxlText30 {
-  font-size: 25px;
 }
 
 .cardImage {
@@ -203,19 +229,20 @@
 
 .section {
   margin: 0 auto;
+  
   width: 90%;
   max-width: 1600px;
 }
 
 .sectionTitle {
 
-  font-size: 2.5rem;
+  font-size: 28px  ;
   margin-bottom: 40px;
   color: #333333;
 }
 
 .text3xl {
-  font-size: 1.875rem;
+  font-size: 28px;
   font-weight: bold;
 }
 
@@ -816,10 +843,16 @@
   }
 
   .cardText,
-  .text18,
-  .xlText30,
-  .xxlText30 {
-    font-size: 0.9rem;
+  .text17,
+  .text20,
+  .text15,
+  .xlText17,
+  .xlText20,
+  .xlText15,
+  .xxlText17,
+  .xxlText20,
+  .xxlText15 {
+    font-size: 0.9rem !important;
   }
 
   .cardImageImg {

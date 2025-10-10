@@ -61,7 +61,7 @@ const handleYearClick = year => {
             left: '50%',
             transform: 'translate(-50%, -50%)',
             color: 'white',
-            fontSize: '3rem',
+            fontSize: '23px',
             fontWeight: '500',
             margin: 0,
           }}

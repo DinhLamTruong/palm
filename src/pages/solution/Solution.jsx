@@ -79,7 +79,7 @@ const TechnologySolutions = () => {
       >
         <FiChevronLeft className={styles.icon} />
       </button>
-      <div ref={scrollRef} className={styles.solutionsContainer}>
+      <div ref={scrollRef} className={styles.solutionsContainer}>                                             
         {technologySolutionsData.map((item, index) => {
           const isExpanded = expandedIndex === index;
           return (
@@ -166,7 +166,7 @@ const Solution = () => {
           backgroundImage: `url(${banner})`,
         }}
       >
-        <div className={styles.bannerOverlay}></div>
+      
         <h1 className={styles.bannerTitle}>{t('solution.title')}</h1>
       </div>
       <TechnologySolutions />

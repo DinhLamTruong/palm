@@ -4,7 +4,7 @@
     }
 
     .section {
-    margin: 4rem 0;
+    margin: 4.5rem 0;
     padding: 0 1.5rem;
     max-width: 80rem;
     margin-left: auto;
@@ -55,7 +55,7 @@
 
     .bannerTitle {
     color: #fff;
-    font-size: 3.75rem;
+    font-size: 23px;
     font-weight: 500;
     position: relative;
     z-index: 10;
@@ -231,3 +231,286 @@
     margin-bottom: 0.25rem;
     }
 
+/* Mobile First Approach */
+
+/* Base styles remain the same, but add responsive modifications */
+
+/* Mobile (up to 640px) */
+@media (max-width: 640px) {
+  .section {
+    margin: 2rem 0;
+    padding: 0 1rem;
+  }
+
+  .sectionTitle {
+    font-size: 28px;
+    margin-bottom: 1.5rem;
+  }
+
+  .sectionDescription {
+    font-size: 1.25rem;
+  }
+
+  .productList {
+    font-size: 1.25rem;
+    margin-left: 1.5rem;
+  }
+
+  .productList li {
+    margin-bottom: 0.5rem;
+  }
+
+  .banner {
+    height: 20rem;
+  }
+
+  .bannerTitle {
+    font-size: 20px;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .scrollButtonLeft,
+  .scrollButtonRight {
+    padding: 0.5rem;
+    top: 50%;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+
+  .scrollButtonLeft {
+    left: -0.5rem;
+  }
+
+  .scrollButtonRight {
+    right: -0.5rem;
+  }
+
+  .solutionsContainer {
+    gap: 0.75rem;
+    padding: 0 2rem; /* Space for scroll buttons */
+  }
+
+  .solutionCard {
+    min-width: 14rem;
+    height: 20rem;
+  }
+
+  .solutionImage {
+    height: 20rem;
+  }
+
+  .solutionTitle {
+    font-size: 18px;
+    left: 0.75rem;
+    bottom: 0.75rem;
+  }
+
+  .solutionCard:hover .solutionTitle {
+    transform: translateY(-16rem);
+  }
+
+  .solutionDescription {
+    font-size: 0.9rem;
+    max-height: 12rem;
+    margin-top: 4rem;
+  }
+
+  .partnersContainer {
+    gap: 1rem;
+  }
+
+  .partnerLogo {
+    min-width: 2.5rem;
+  }
+
+  .clientsGrid {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    gap: 0.75rem;
+    font-size: 1rem;
+  }
+}
+
+/* Tablet (641px - 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .section {
+    padding: 0 1.25rem;
+  }
+
+  .sectionTitle {
+    font-size: 32px;
+  }
+
+  .banner {
+    height: 22rem;
+  }
+
+  .bannerTitle {
+    font-size: 22px;
+  }
+
+  .scrollButtonLeft,
+  .scrollButtonRight {
+    padding: 0.625rem;
+  }
+
+  .solutionsContainer {
+    gap: 0.875rem;
+  }
+
+  .solutionCard {
+    min-width: 16rem;
+    height: 21rem;
+  }
+
+  .solutionImage {
+    height: 21rem;
+  }
+
+  .clientsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1.25rem;
+    gap: 0.875rem;
+    font-size: 1.0625rem;
+  }
+
+  .partnersContainer {
+    gap: 1.25rem;
+  }
+
+  .partnerLogo {
+    min-width: 2.75rem;
+  }
+}
+
+/* Desktop (1025px and up) - Your existing styles work well */
+@media (min-width: 1025px) {
+  .section {
+    max-width: 80rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .clientsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  /* Hide scroll buttons on very large screens if content fits */
+  .scrollButtonLeft,
+  .scrollButtonRight {
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
+
+  .scrollButtonLeft:hover,
+  .scrollButtonRight:hover {
+    opacity: 1;
+  }
+}
+
+/* Large Desktop (1440px and up) */
+@media (min-width: 1440px) {
+  .sectionTitle {
+    font-size: 40px;
+  }
+
+  .bannerTitle {
+    font-size: 26px;
+  }
+
+  .solutionCard {
+    min-width: 18rem;
+    height: 24rem;
+  }
+
+  .solutionImage {
+    height: 24rem;
+  }
+
+  .solutionTitle {
+    font-size: 22px;
+  }
+}
+
+/* Additional responsive improvements */
+
+/* Ensure solution cards don't overflow on small screens */
+@media (max-width: 480px) {
+  .solutionsContainer {
+    padding: 0 1.5rem;
+  }
+
+  .solutionCard {
+    min-width: 13rem;
+    height: 18rem;
+  }
+
+  .solutionImage {
+    height: 18rem;
+  }
+
+  .solutionCard:hover .solutionTitle {
+    transform: translateY(-14.5rem);
+  }
+
+  .solutionDescription {
+    max-height: 10rem;
+    font-size: 0.85rem;
+  }
+
+  .banner {
+    height: 18rem;
+  }
+
+  .bannerTitle {
+    font-size: 18px;
+  }
+}
+
+/* Improve scroll behavior on touch devices */
+@media (hover: none) and (pointer: coarse) {
+  .solutionCard {
+    transition: none; /* Disable hover animations on touch devices */
+  }
+
+  .solutionCard:active {
+    transform: scale(1.05);
+  }
+
+  .scrollButtonLeft,
+  .scrollButtonRight {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+/* Landscape mobile adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+  .banner {
+    height: 15rem;
+  }
+
+  .sectionTitle {
+    font-size: 24px;
+    margin-bottom: 1rem;
+  }
+
+  .solutionCard {
+    min-width: 12rem;
+    height: 16rem;
+  }
+
+  .solutionImage {
+    height: 16rem;
+  }
+}
+
+/* High DPI displays */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .logoImage,
+  .solutionImage {
+    image-rendering: -webkit-optimize-contrast;
+  }
+}

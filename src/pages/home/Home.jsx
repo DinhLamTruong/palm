@@ -45,17 +45,17 @@ const Home = () => {
         <div className={`${styles.card} ${styles.height160}`}>
           <div className={styles.cardContent}>
             <h2
-              className={`${styles.cardText} ${styles.text18} ${styles.xlText30} ${styles.xxlText30}`}
+              className={`${styles.cardText} ${styles.text17} ${styles.xlText17} ${styles.xxlText17}`}
             >
               {t('home.established2007')}
             </h2>
             <p
-              className={`${styles.cardText} ${styles.text18} ${styles.xlText30} ${styles.xxlText30}`}
+              className={`${styles.cardText} ${styles.text20} ${styles.xlText20} ${styles.xxlText20}`}
             >
               {t('home.aboutText1')}
             </p>
             <p
-              className={`${styles.cardText} ${styles.text18} ${styles.xlText30} ${styles.xxlText30}`}
+              className={`${styles.cardText} ${styles.text20} ${styles.xlText20} ${styles.xxlText20}`}
             >
               {t('home.aboutText2')}
             </p>
@@ -66,7 +66,7 @@ const Home = () => {
                 aria-label={t('home.aboutUs')}
               >
                 <span
-                  className={`${styles.flex1} ${styles.text12} ${styles.xlText16} ${styles.xxlText16}`}
+                  className={`${styles.flex1} ${styles.text15} ${styles.xlText15} ${styles.xxlText15}`}
                 >
                   {t('home.aboutUs')}
                 </span>

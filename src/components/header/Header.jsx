@@ -37,14 +37,7 @@ export default function Header() {
           />
         </div>
 
-        {/* Hamburger Button (visible on mobile) */}
-        <button
-          className={styles.hamburger}
-          onClick={toggleMenu}
-          aria-label={isMenuOpen ? t('header.closeMenu') : t('header.openMenu')}
-        >
-          <span className={styles.hamburgerIcon}></span>
-        </button>
+      
 
         {/* Navigation Menu */}
         <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
@@ -94,6 +87,14 @@ export default function Header() {
             {otherLabel}
           </button>
         </div>
+          {/* Hamburger Button (visible on mobile) */}
+        <button
+          className={styles.hamburger}
+          onClick={toggleMenu}
+          aria-label={isMenuOpen ? t('header.closeMenu') : t('header.openMenu')}
+        >
+          <span className={styles.hamburgerIcon}></span>
+        </button> 
       </div>
     </header>
   );

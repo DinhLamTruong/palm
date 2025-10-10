@@ -48,7 +48,7 @@ const Contact = () => {
         className="relative bg-cover bg-center h-120 flex items-center justify-center"
         style={{ backgroundImage: `url(${banner})` }}
       >
-        <div className="absolute inset-0 bg-black opacity-50"></div>
+        
         <h1 className="relative text-white text-6xl font-medium">
           {t('contact.title')}
         </h1>
