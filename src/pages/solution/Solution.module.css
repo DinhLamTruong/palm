@@ -13,7 +13,7 @@
     }
 
     .sectionTitle {
-   font-size: 36px;
+   font-size: 23px;
     font-weight: 600;
     margin-bottom: 2rem;
     line-height: 1.2;
@@ -412,32 +412,7 @@
 }
 
 /* Large Desktop (1440px and up) */
-@media (min-width: 1440px) {
-  .sectionTitle {
-    font-size: 40px;
-  }
 
-  .bannerTitle {
-    font-size: 26px;
-  }
-
-  .solutionCard {
-    min-width: 18rem;
-    height: 24rem;
-  }
-
-  .solutionImage {
-    height: 24rem;
-  }
-
-  .solutionTitle {
-    font-size: 22px;
-  }
-}
-
-/* Additional responsive improvements */
-
-/* Ensure solution cards don't overflow on small screens */
 @media (max-width: 480px) {
   .solutionsContainer {
     padding: 0 1.5rem;

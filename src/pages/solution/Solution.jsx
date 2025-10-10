@@ -1,8 +1,7 @@
 import React, { useState, useRef } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
-import styles from './Solution.module.css';
-import banner from '../../assets/Img/bannerpage.png';
+import bannerImage from '../../assets/Img/bannerpage.png';
 import img1 from '../../assets/partnersClients/1.png';
 import img2 from '../../assets/partnersClients/2.png';
 import img3 from '../../assets/partnersClients/3.png';
@@ -57,9 +56,11 @@ const TechnologySolutions = () => {
     },
   ];
 
- 
+  const handleClick = (index) => {
+    setExpandedIndex(expandedIndex === index ? null : index);
+  };
 
-  const scroll = direction => {
+  const scroll = (direction) => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current;
       const scrollTo =
@@ -71,32 +72,45 @@ const TechnologySolutions = () => {
   };
 
   return (
-    <section className={styles.section}>
-      <h2 className={styles.sectionTitle}>{t('solution.technologySolutions')}</h2>
+    <section className="my-16 px-4 max-w-7xl mx-auto relative">
+      <h2 className="text-[23px] font-semibold mb-8 leading-tight">
+        {t('solution.technologySolutions')}
+      </h2>
       <button
         onClick={() => scroll('left')}
-        className={styles.scrollButtonLeft}
+        className="absolute top-1/2 -left-3 transform -translate-y-1/2 bg-white rounded-full shadow-md p-3 hover:bg-gray-100 transition z-10"
       >
-        <FiChevronLeft className={styles.icon} />
+        <FiChevronLeft className="text-xl" />
       </button>
-      <div ref={scrollRef} className={styles.solutionsContainer}>                                             
+      <div
+        ref={scrollRef}
+        className="flex gap-4 overflow-x-hidden scroll-smooth no-scrollbar"
+      >
         {technologySolutionsData.map((item, index) => {
           const isExpanded = expandedIndex === index;
           return (
             <div
               key={index}
               onClick={() => handleClick(index)}
-              className={`${styles.solutionCard} ${isExpanded ? styles.expanded : ''}`}
+              className={`min-w-[240px] h-[360px] rounded-lg overflow-hidden flex-shrink-0 cursor-pointer relative transition-transform duration-700 ${
+                isExpanded ? 'scale-110 z-10' : ''
+              }`}
             >
               <img
                 src={item.imageUrl}
                 alt={item.title}
-                className={styles.solutionImage}
+                className="w-full h-[360px] object-cover brightness-75 hover:brightness-50 transition"
               />
-              <div className={styles.solutionTitle}>{item.title}</div>
-              <div className={`${styles.solutionOverlay} ${isExpanded ? styles.overlayVisible : ''}`}>
-                <div className={styles.solutionDescription}>
-                  <p>{item.description}</p>
+              <div className="absolute left-4 bottom-4 text-white font-semibold text-xl transition-transform duration-700 hover:-translate-y-[280px]">
+                {item.title}
+              </div>
+              <div
+                className={`absolute inset-0 bg-black bg-opacity-20 opacity-0 p-4 flex items-center transition-all duration-700 ${
+                  isExpanded ? 'opacity-100 translate-y-0' : 'translate-y-4'
+                }`}
+              >
+                <div className="mt-20 max-h-60 overflow-y-auto text-white text-base pr-2 transform transition-all duration-500 hover:translate-y-0 hover:opacity-100 opacity-0">
+                  <p className="whitespace-pre-line leading-6">{item.description}</p>
                 </div>
               </div>
             </div>
@@ -105,9 +119,9 @@ const TechnologySolutions = () => {
       </div>
       <button
         onClick={() => scroll('right')}
-        className={styles.scrollButtonRight}
+        className="absolute top-1/2 -right-4 transform -translate-y-1/2 bg-white rounded-full shadow-md p-3 hover:bg-gray-100 transition z-10"
       >
-        <FiChevronRight className={styles.icon} />
+        <FiChevronRight className="text-xl" />
       </button>
     </section>
   );
@@ -117,12 +131,14 @@ const Product = () => {
   const { t } = useTranslation();
   const products = t('solution.productList', { returnObjects: true });
   return (
-    <section className={styles.section}>
-      <h2 className={styles.sectionTitle}>{t('solution.products')}</h2>
-      <p className={styles.sectionDescription}>{t('solution.productsDescription')}</p>
-      <ul className={styles.productList}>
+    <section className="my-16 px-4 max-w-7xl mx-auto">
+      <h2 className="text-[23px] font-semibold mb-8 leading-tight">
+        {t('solution.products')}
+      </h2>
+      <p className="text-2xl mb-4">{t('solution.productsDescription')}</p>
+      <ul className="list-disc list-inside ml-10 text-2xl">
         {products.map((product, index) => (
-          <li key={index}>{product}</li>
+          <li key={index} className="mb-1">{product}</li>
         ))}
       </ul>
     </section>
@@ -134,20 +150,22 @@ const PartnersClients = () => {
   const clients = t('solution.clients', { returnObjects: true });
 
   return (
-    <section className={styles.section}>
-      <h2 className={styles.sectionTitle}>{t('solution.partnersClients')}</h2>
-      <div className={styles.partnersContainer}>
+    <section className="my-16 px-4 max-w-7xl mx-auto">
+      <h2 className="text-[23px] font-semibold mb-8 leading-tight">
+        {t('solution.partnersClients')}
+      </h2>
+      <div className="flex gap-6 mb-6 overflow-x-auto no-scrollbar">
         {partnersLogos.map((logo, index) => (
-          <div key={index} className={styles.partnerLogo}>
-            <img src={logo.src} alt={logo.alt} className={styles.logoImage} />
+          <div key={index} className="min-w-[50px] flex items-center justify-center">
+            <img src={logo.src} alt={logo.alt} className="object-contain" />
           </div>
         ))}
       </div>
-      <div className={styles.clientsGrid}>
+      <div className="bg-white border border-gray-200 rounded-lg p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 text-gray-600 text-lg font-medium">
         {clients.map((column, colIndex) => (
-          <ul key={colIndex} className={styles.clientList}>
+          <ul key={colIndex} className="m-0">
             {column.map((client, index) => (
-              <li key={index}>{client}</li>
+              <li key={index} className="mb-1">{client}</li>
             ))}
           </ul>
         ))}
@@ -159,15 +177,18 @@ const PartnersClients = () => {
 const Solution = () => {
   const { t } = useTranslation();
   return (
-    <div className={styles.container}>
-      <div
-        className={styles.banner}
-        style={{
-          backgroundImage: `url(${banner})`,
-        }}
-      >
-      
-        <h1 className={styles.bannerTitle}>{t('solution.title')}</h1>
+    <div className="min-h-screen bg-cover bg-center bg-fixed">
+      <div className="relative text-center mt-20 overflow-hidden">
+        <img
+          src={bannerImage}
+          alt="Banner"
+          className="w-full h-[400px] object-cover block"
+        />
+        <h1
+          className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl md:text-2xl font-medium text-shadow-lg whitespace-nowrap"
+        >
+          {t('solution.title')}
+        </h1>
       </div>
       <TechnologySolutions />
       <Product />

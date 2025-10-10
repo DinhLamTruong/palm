@@ -54,8 +54,8 @@ const handleYearClick = year => {
           alt="Banner"
           style={{ width: '100%' }}
         />
-        <h1
-          style={{
+          <h1
+            style={{
             position: 'absolute',
             top: '50%',
             left: '50%',

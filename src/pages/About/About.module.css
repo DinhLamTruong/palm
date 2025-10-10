@@ -116,11 +116,11 @@
   margin-bottom: 30px;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-weight: 500;
+  font-weight: 700; /* Changed from 500 to 700 for bold */
 }
 
 .visionText {
-  font-size: 24px;
+  font-size: 22px; /* Reduced from 24px to 22px */
   line-height: 1.8;
   max-width: 800px;
   margin: 0 auto 20px;
@@ -332,7 +332,7 @@
   }
 
   .visionText {
-    font-size: 1.2rem;
+    font-size: 1.2rem; /* Reduced from 1.2rem (19.2px) to maintain 2px reduction */
   }
 
   .timelineHeader {
@@ -393,7 +393,7 @@
   }
 
   .visionText {
-    font-size: 1.1rem;
+    font-size: 1rem; /* Reduced from 1.1rem (17.6px) to maintain 2px reduction */
   }
 
   .timelineSection {
@@ -479,7 +479,7 @@
   }
 
   .visionText {
-    font-size: 1rem;
+    font-size: 0.95rem; /* Reduced from 1rem (16px) to maintain 2px reduction */
     line-height: 1.6;
   }
 
@@ -608,7 +608,7 @@
   }
 
   .visionText {
-    font-size: 0.95rem;
+    font-size: 0.85rem; /* Reduced from 0.95rem (15.2px) to maintain 2px reduction */
   }
 
   .timelineHeader {
