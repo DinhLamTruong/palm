@@ -11,7 +11,7 @@
   color: #1f2937; /* gray-800 */
   text-align: start;
   margin-bottom: 40px;
-  margin-left: 5%;
+  margin-left: 0 !important;
 }
 
 .swiper {

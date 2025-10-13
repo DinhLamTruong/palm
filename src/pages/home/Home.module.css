@@ -228,7 +228,7 @@
 }
 
 .section {
-  margin: 0 auto;
+  /* margin: 0 auto; */
   
   width: 90%;
   max-width: 1600px;
@@ -239,6 +239,7 @@
   font-size: 28px  ;
   margin-bottom: 40px;
   color: #333333;
+  /* margin-left: 0 !important; */
 }
 
 .text3xl {
@@ -744,6 +745,7 @@
 
   .sectionTitle {
     font-size: 2rem;
+    margin-left: 0 !important;
   }
 
   .text3xl {
@@ -880,6 +882,7 @@
   .sectionTitle {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    margin-left: 0 !important;
   }
 
   .text3xl {
