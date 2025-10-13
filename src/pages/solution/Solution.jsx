@@ -56,7 +56,7 @@ const TechnologySolutions = () => {
     },
     {
       title: t('solution.solutions.iot.title'),
-      description: t('solution.solutions..description'),
+      description: t('solution.solutions.iot.description'),
       imageUrl: img6Slu,
     },
   ];

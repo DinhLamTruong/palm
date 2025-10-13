@@ -139,6 +139,10 @@
       "custom": {
         "title": "Custom Software Platform",
         "description": "Develop custom software platforms that meet business needs precisely, helping optimize processes and improve performance."
+      },
+       "iot": {
+        "title": "IoT (Internet of Things) solutions",
+        "description": "IoT, or Internet of Things, is a network of internet-connected physical devices that are capable of collecting and exchanging data with each other without human intervention. These devices can range from household appliances like smart light bulbs to complex industrial machines, equipped with sensors and software to send and receive information and automatically take action based on that data."
       }
     },
     "products": "Products",
