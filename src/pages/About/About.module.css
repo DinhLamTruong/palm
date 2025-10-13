@@ -112,18 +112,18 @@
 }
 
 .visionTitle {
-  font-size: 2.4rem;
-  margin-bottom: 30px;
+  font-size: 22px;
+  margin-bottom: 20px;
   text-transform: uppercase;
   letter-spacing: 2px;
   font-weight: 700; /* Changed from 500 to 700 for bold */
 }
 
 .visionText {
-  font-size: 22px; /* Reduced from 24px to 22px */
+  font-size: 18px; /* Reduced from 24px to 22px */
   line-height: 1.8;
   max-width: 800px;
-  margin: 0 auto 20px;
+  margin: 0 auto 10px;
 }
 
 /* Timeline Section */
@@ -225,7 +225,7 @@
   position: sticky;
   top: 140px;
   align-self: flex-start;
-  max-height: calc(100vh - 140px);
+  max-height: calc(100vh - 70px);
 }
 
 .yearLine {
