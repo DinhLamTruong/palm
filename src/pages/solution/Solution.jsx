@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef } from 'react';
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import bannerImage from '../../assets/Img/bannerpage.png';
@@ -25,7 +25,6 @@ const partnersLogos = [
 
 const TechnologySolutions = () => {
   const { t } = useTranslation();
-  const [expandedIndex, setExpandedIndex] = useState(null);
   const scrollRef = useRef(null);
 
   const technologySolutionsData = [
@@ -54,11 +53,12 @@ const TechnologySolutions = () => {
       description: t('solution.solutions.custom.description'),
       imageUrl: img5Slu,
     },
+    {
+      title: t('solution.solutions.custom.title'),
+      description: t('solution.solutions.custom.description'),
+      imageUrl: img5Slu,
+    },
   ];
-
-  const handleClick = (index) => {
-    setExpandedIndex(expandedIndex === index ? null : index);
-  };
 
   const scroll = (direction) => {
     if (scrollRef.current) {
@@ -86,36 +86,29 @@ const TechnologySolutions = () => {
         ref={scrollRef}
         className="flex gap-4 overflow-x-hidden scroll-smooth no-scrollbar"
       >
-        {technologySolutionsData.map((item, index) => {
-          const isExpanded = expandedIndex === index;
-          return (
-            <div
-              key={index}
-              onClick={() => handleClick(index)}
-              className={`min-w-[240px] h-[360px] rounded-lg overflow-hidden flex-shrink-0 cursor-pointer relative transition-transform duration-700 ${
-                isExpanded ? 'scale-110 z-10' : ''
-              }`}
-            >
-              <img
-                src={item.imageUrl}
-                alt={item.title}
-                className="w-full h-[360px] object-cover brightness-75 hover:brightness-50 transition"
-              />
-              <div className="absolute left-4 bottom-4 text-white font-semibold text-xl transition-transform duration-700 hover:-translate-y-[280px]">
-                {item.title}
+        {technologySolutionsData.map((item, index) => (
+          <div
+            key={index}
+            className="group min-w-[240px] h-[360px] rounded-lg overflow-hidden flex-shrink-0 cursor-pointer relative transition-transform duration-700 hover:scale-110 hover:z-10"
+          >
+            <img
+              src={item.imageUrl}
+              alt={item.title}
+              className="w-full h-[360px] object-cover brightness-75 group-hover:brightness-50 transition"
+            />
+            <div className="absolute inset-0 bg-black/30 bg-opacity-40 opacity-0 transition-all duration-700 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 flex flex-col">
+              <div className="p-4 pb-2">
+                <h3 className="text-white font-semibold text-xl">{item.title}</h3>
               </div>
-              <div
-                className={`absolute inset-0 bg-black bg-opacity-20 opacity-0 p-4 flex items-center transition-all duration-700 ${
-                  isExpanded ? 'opacity-100 translate-y-0' : 'translate-y-4'
-                }`}
-              >
-                <div className="mt-20 max-h-60 overflow-y-auto text-white text-base pr-2 transform transition-all duration-500 hover:translate-y-0 hover:opacity-100 opacity-0">
-                  <p className="whitespace-pre-line leading-6">{item.description}</p>
-                </div>
+              <div className="flex-1 overflow-y-auto px-4 pb-4 transform transition-all duration-500 opacity-0 translate-y-2 group-hover:translate-y-0 group-hover:opacity-100">
+                <p className="text-white text-base whitespace-pre-line leading-relaxed text-left">{item.description}</p>
               </div>
             </div>
-          );
-        })}
+            <div className="absolute left-4 bottom-4 text-white font-semibold text-xl transition-opacity duration-300 group-hover:opacity-0 pointer-events-none z-20">
+              {item.title}
+            </div>
+          </div>
+        ))}
       </div>
       <button
         onClick={() => scroll('right')}
