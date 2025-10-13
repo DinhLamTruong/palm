@@ -225,7 +225,7 @@
   position: sticky;
   top: 140px;
   align-self: flex-start;
-  max-height: calc(100vh - 70px);
+  max-height: calc(100vh - 75px);
 }
 
 .yearLine {
