@@ -366,7 +366,7 @@
   transform: translateY(-5px);
 }
 
-.partnerLogoImg
+.partnerLogoImg{
   max-height: 40px;
 }
 
