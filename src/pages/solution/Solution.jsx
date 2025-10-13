@@ -74,7 +74,7 @@ const TechnologySolutions = () => {
 
   return (
     <section className="my-16 px-4 max-w-7xl mx-auto relative">
-      <h2 className="text-[23px] font-semibold mb-8 leading-tight">
+      <h2 className="text-[23px] font-bold mb-8 leading-tight">
         {t('solution.technologySolutions')}
       </h2>
       <button
@@ -90,7 +90,7 @@ const TechnologySolutions = () => {
         {technologySolutionsData.map((item, index) => (
           <div
             key={index}
-            className="group min-w-[240px] h-[360px] rounded-lg overflow-hidden flex-shrink-0 cursor-pointer relative transition-transform duration-700 hover:scale-110 hover:z-10"
+            className="group min-w-[240px] w-[240px] h-[360px] rounded-lg overflow-hidden flex-shrink-0 cursor-pointer relative transition-transform duration-700 hover:scale-110 hover:z-10"
           >
             <img
               src={item.imageUrl}
@@ -99,7 +99,7 @@ const TechnologySolutions = () => {
             />
             <div className="absolute inset-0 bg-black/30 bg-opacity-40 opacity-0 transition-all duration-700 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 flex flex-col">
               <div className="p-4 pb-2">
-                <h3 className="text-white font-semibold text-xl">{item.title}</h3>
+                <h3 className="text-white pt-5 font-semibold text-xl">{item.title}</h3>
               </div>
               <div className="flex-1 overflow-y-auto px-4 pb-4 transform transition-all duration-500 opacity-0 translate-y-2 group-hover:translate-y-0 group-hover:opacity-100">
                 <p className="text-white text-base whitespace-pre-line leading-relaxed text-left">{item.description}</p>
@@ -126,7 +126,7 @@ const Product = () => {
   const products = t('solution.productList', { returnObjects: true });
   return (
     <section className="my-16 px-4 max-w-7xl mx-auto">
-      <h2 className="text-[23px] font-semibold mb-8 leading-tight">
+      <h2 className="text-[23px] font-bold mb-8 leading-tight">
         {t('solution.products')}
       </h2>
       <p className="text-2xl mb-4">{t('solution.productsDescription')}</p>
@@ -145,7 +145,7 @@ const PartnersClients = () => {
 
   return (
     <section className="my-16 px-4 max-w-7xl mx-auto">
-      <h2 className="text-[23px] font-semibold mb-8 leading-tight">
+      <h2 className="text-[23px] font-bold mb-8 leading-tight">
         {t('solution.partnersClients')}
       </h2>
       <div className="flex gap-6 mb-6 overflow-x-auto no-scrollbar">

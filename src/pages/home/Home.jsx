@@ -138,6 +138,7 @@ const Home = () => {
           <div className={`${styles.flex} ${styles.justifyCenter} ${styles.mb6} ${styles.gap4}`}>
             <div className={`${styles.partnerLogo} ${styles.w40} ${styles.h20}`}>
               <img
+              style={{ maxHeight: '70px', width: '155px' }}
                 src={palmcap}
                 alt={t('home.palmcapAlt')}
                 className={styles.partnerLogoImg}
