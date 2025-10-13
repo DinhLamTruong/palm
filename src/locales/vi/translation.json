@@ -138,6 +138,10 @@
       "custom": {
         "title": "Nền tảng phần mềm tùy chỉnh",
         "description": "Phát triển nền tảng phần mềm tùy chỉnh đáp ứng chính xác nhu cầu kinh doanh, giúp tối ưu quy trình và nâng cao hiệu suất."
+      },
+       "iot": {
+        "title": "Giải pháp IoT (Internet of Things)",
+        "description": "IoT, hay Internet vạn vật, là một mạng lưới các thiết bị vật lý được kết nối Internet, có khả năng thu thập và trao đổi dữ liệu với nhau mà không cần sự can thiệp của con người. Các thiết bị này có thể từ đồ gia dụng như bóng đèn thông minh đến máy móc công nghiệp phức tạp, được trang bị cảm biến và phần mềm để gửi, nhận thông tin và tự động thực hiện hành động dựa trên dữ liệu đó. "
       }
     },
     "products": "Sản Phẩm",

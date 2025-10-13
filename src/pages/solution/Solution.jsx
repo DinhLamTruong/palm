@@ -8,11 +8,12 @@ import img3 from '../../assets/partnersClients/3.png';
 import img4 from '../../assets/partnersClients/4.png';
 import img5 from '../../assets/partnersClients/5.png';
 import img6 from '../../assets/partnersClients/6.png';
-import img1Slu from '../../assets/imgsSolution/1.png';
-import img2Slu from '../../assets/imgsSolution/2.png';
-import img3Slu from '../../assets/imgsSolution/3.png';
-import img4Slu from '../../assets/imgsSolution/4.png';
-import img5Slu from '../../assets/imgsSolution/5.png';
+import img1Slu from '../../assets/imgsSolution/1.jpg';
+import img2Slu from '../../assets/imgsSolution/2.jpg';
+import img3Slu from '../../assets/imgsSolution/3.jpg';
+import img4Slu from '../../assets/imgsSolution/4.jpg';
+import img5Slu from '../../assets/imgsSolution/5.jpg';
+import img6Slu from '../../assets/imgsSolution/6.jpg';
 
 const partnersLogos = [
   { src: img1, alt: 'Mobifone' },
@@ -54,9 +55,9 @@ const TechnologySolutions = () => {
       imageUrl: img5Slu,
     },
     {
-      title: t('solution.solutions.custom.title'),
-      description: t('solution.solutions.custom.description'),
-      imageUrl: img5Slu,
+      title: t('solution.solutions.iot.title'),
+      description: t('solution.solutions..description'),
+      imageUrl: img6Slu,
     },
   ];
 
