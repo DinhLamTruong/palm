@@ -97,7 +97,7 @@ const TechnologySolutions = () => {
               alt={item.title}
               className="w-full h-[360px] object-cover brightness-75 group-hover:brightness-50 transition"
             />
-            <div className="absolute inset-0 bg-black/30 bg-opacity-40 opacity-0 transition-all duration-700 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 flex flex-col">
+            <div className="absolute inset-0 bg-black/30 bg-opacity-40 opacity-0 transition-all duration-700 hover:p-3 group-hover:opacity-100 translate-y-4 group-hover:translate-y-0 flex flex-col">
               <div className="p-4 pb-2">
                 <h3 className="text-white pt-5 font-semibold text-xl">{item.title}</h3>
               </div>
@@ -129,10 +129,10 @@ const Product = () => {
       <h2 className="text-[23px] font-bold mb-8 leading-tight">
         {t('solution.products')}
       </h2>
-      <p className="text-2xl mb-4">{t('solution.productsDescription')}</p>
+      <p className="text-[20px] mb-4">{t('solution.productsDescription')}</p>
       <ul className="list-disc list-inside ml-10 text-2xl">
         {products.map((product, index) => (
-          <li key={index} className="mb-1">{product}</li>
+          <li key={index} className="text-[20px] mb-1">{product}</li>
         ))}
       </ul>
     </section>
@@ -159,7 +159,7 @@ const PartnersClients = () => {
         {clients.map((column, colIndex) => (
           <ul key={colIndex} className="m-0">
             {column.map((client, index) => (
-              <li key={index} className="mb-1">{client}</li>
+              <li key={index} className="text-[16px] mb-1">{client}</li>
             ))}
           </ul>
         ))}
