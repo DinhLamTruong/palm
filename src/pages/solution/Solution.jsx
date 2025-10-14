@@ -90,7 +90,7 @@ const TechnologySolutions = () => {
         {technologySolutionsData.map((item, index) => (
           <div
             key={index}
-            className="group min-w-[240px] w-[240px] h-[360px] rounded-lg overflow-hidden flex-shrink-0 cursor-pointer relative transition-transform duration-700 hover:scale-110 hover:z-10"
+            className="group min-w-[240px] w-[240px] h-[360px] rounded-lg overflow-hidden flex-shrink-0 cursor-pointer relative transition-transform duration-700 hover:z-10"
           >
             <img
               src={item.imageUrl}
