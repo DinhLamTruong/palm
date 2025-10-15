@@ -70,7 +70,7 @@
 }
 
 .text2xl {
-  font-size: 1rem; /* Default for laptops */
+  font-size: 1.5rem; /* Default for laptops */
 }
 
 .xxlText4xl {
@@ -227,12 +227,7 @@
   padding: 40px 0;
 }
 
-.section {
-  /* margin: 0 auto; */
-  
-  width: 90%;
-  max-width: 1600px;
-}
+
 
 .sectionTitle {
 
